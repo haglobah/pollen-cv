@@ -2,10 +2,10 @@
 
 ◊title[#:street "Dammstraße 5" #:city "74076 Heilbronn" #:phone "+49 1573 6830713" #:email "beat.hagenlocher@posteo.de" #:git "https://github.com/haglobah"]{Beat Hagenlocher}
 
-◊statement{
+◊; ◊statement{
 
 
-}
+◊; }
 
 ◊section["Fähigkeiten & Auszeichnungen"]{
 
@@ -20,6 +20,10 @@
 
 		(Weiter-)Entwicklung von Kurskonzepten, Durchführung von Kursen als Team-Inspirer sowie die (technologische) Weiterentwicklung der Hacker School selbst.
 
+	}
+	◊par[#:org "Wie Menschen lernen" #:area "Deutsche SchülerAkademie" #:role "Kursleitung" #:date "16 Tage in 06-07/2022" #:loc "Wolfsberg" #:topics ""]{
+
+		Konzeption, Vorbereitung und Leitung eines ca. 50-stündigen Kurses für leistungsbereite und -fähige Schüler*innen der 10.-11. Klasse, sowie deren Betreuung über den Verlauf der Akademie.
 	}
 	◊par[#:org "rootlinks" #:area "NGO: Bildung, Nachhaltigkeit" #:role "ehrenamtlich" #:date "06/2021-03/2022" #:loc "Zürich" #:topics "Organisationsentwicklung, Nachhaltigkeit, Design Thinking, Systems Design, Coaching"]{
 		
@@ -36,33 +40,37 @@
 		Praktikum bei TNG im Innovation Hacking. Entwicklung von KI-Agenten im Spiel Blobby VR; Debugging des Spiels.
 
 	}
-	◊par[#:org "bild der wissenschaft/natur" #:area "Redaktion" #:role "Praktikum" #:date "5 Tage im September 2018" #:loc "Leinfelden-Echterdingen" #:topics ""]{
+	◊par[#:org "bild der wissenschaft/natur" #:area "Redaktion" #:role "Praktikum" #:date "5 Tage in 09/2018" #:loc "Leinfelden-Echterdingen" #:topics ""]{
 
 
 	}
-	◊par[#:org "Boehringer Ingelheim" #:area "Pharmaindustrie" #:role "Praktikum" #:date "5 Tage im September 2017" #:loc "Biberach a.d. Riß" #:topics ""]{
+	◊par[#:org "Boehringer Ingelheim" #:area "Pharmaindustrie" #:role "Praktikum" #:date "5 Tage in 09/2017" #:loc "Biberach a.d. Riß" #:topics ""]{
 
 
 	}
-	◊par[#:org "SmiTo GmbH" #:area "Ingenieurbüro" #:role "Praktikum" #:date "5 Tage im Oktober 2015" #:loc "Tübingen" #:topics ""]{
+	◊par[#:org "SmiTo GmbH" #:area "Ingenieurbüro" #:role "Praktikum" #:date "5 Tage in 10/2015" #:loc "Tübingen" #:topics ""]{
 
 
 	}
-	◊par[#:org "" #:area "" #:role "" #:date "" #:loc "" #:topics ""]{
+	◊; ◊par[#:org "" #:area "" #:role "" #:date "" #:loc "" #:topics ""]{
 
 
-	}
+	◊; }
 }
 
 ◊section["Bildungsweg"]{
 
-	◊par[#:org "ETH Zürich" #:area "" #:role "BSc Physik" #:date "14/09/2020 - 20/02/22" #:loc "Zürich" #:topics ""]{
+	◊par[#:org "42 Heilbronn" #:area "Programmierschule" #:role "Student" #:date "03/2022-Heute" #:loc "" #:topics ""]{
+
+		◊e{Erstellung und Verwaltung der ◊l["https://haglobah.github.io/Mastering-42/"]{Mastering 42}-Website}
+	}
+	◊par[#:org "ETH Zürich" #:area "" #:role "BSc Physik" #:date "14/09/2020-20/02/22" #:loc "Zürich" #:topics ""]{
 
 		◊e{bis zum 3. Fachsemester}
 		◊(br)
-		03/21 - 07/21 Teilnahme an ◊l["https://www.rootlinks.ch"]{rootlinks}
+		◊e{03/21 - 07/21 Teilnahme an ◊l["https://www.rootlinks.ch"]{rootlinks}}
 	}
-	◊par[#:org "Leibniz Kolleg" #:area "" #:role "Studium generale et sociale" #:date "03/10/2018 - 26/07/2019" #:loc "Tübingen" #:topics ""]{
+	◊par[#:org "Leibniz Kolleg" #:area "" #:role "Studium generale et sociale" #:date "03/10/2018-26/07/2019" #:loc "Tübingen" #:topics ""]{
 
 		◊e{Pflichtseminare: Wissenschaftliches Schreiben, Rhetorik, Naturwissenschaftliches Schreiben, Seminar zum Erstellen wissenschaftlicher Poster, Politisches Seminar (in Kollaboration mit der lpb Baden-Württemberg), Studienreise nach Rom mit Fokus auf Kunst und Archäologie}
 		◊(br)◊(br)
@@ -74,7 +82,7 @@
 			◊li{Ein neues Lernsystem - Psychologie}
 		}}
 	}
-	◊par[#:org "Carlo-Schmid-Gymnasium" #:area "" #:role "" #:date "2010 - 2018" #:loc "Tübingen" #:topics ""]{
+	◊par[#:org "Carlo-Schmid-Gymnasium" #:area "" #:role "" #:date "2010-2018" #:loc "Tübingen" #:topics ""]{
 
 		◊e{Abschlussnote 1,0; Preis für den besten Abiturienten in Chemie}
 		◊(br)◊(br)
@@ -89,14 +97,14 @@
 		}
 
 	}
-	◊par[#:org "Grundschule Hechinger Eck" #:area "" #:role "" #:date "2006 - 2010" #:loc "Tübingen" #:topics ""]{
+	◊par[#:org "Grundschule Hechinger Eck" #:area "" #:role "" #:date "2006-2010" #:loc "Tübingen" #:topics ""]{
 
 
 	}
-	◊par[#:org "" #:area "" #:role "" #:date "" #:loc "" #:topics ""]{
+	◊; ◊par[#:org "" #:area "" #:role "" #:date "" #:loc "" #:topics ""]{
 
 
-	}
+	◊; }
 }
 
 ◊section["ehrenamtliches Engagement"]{
