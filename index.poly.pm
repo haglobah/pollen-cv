@@ -21,7 +21,7 @@
 		(Weiter-)Entwicklung von Kurskonzepten, Durchführung von Kursen als Team-Inspirer sowie die (technologische) Weiterentwicklung der Hacker School selbst.
 
 	}
-	◊par[#:org "Wie Menschen lernen" #:area "Deutsche SchülerAkademie" #:role "Kursleitung" #:date "16 Tage in 06-07/2022" #:loc "Wolfsberg" #:topics ""]{
+	◊par[#:org "Deutsche SchülerAkademie" #:area "Wie Menschen lernen" #:role "Kursleitung" #:date "16 Tage in 06-07/2022" #:loc "Wolfsberg" #:topics ""]{
 
 		Konzeption, Vorbereitung und Leitung eines ca. 50-stündigen Kurses für leistungsbereite und -fähige Schüler*innen der 10.-11. Klasse, sowie deren Betreuung über den Verlauf der Akademie.
 	}
