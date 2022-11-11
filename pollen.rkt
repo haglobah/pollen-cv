@@ -1,8 +1,8 @@
-#lang racket/base
+#lang racket
 
 (require txexpr
          pollen/core pollen/setup pollen/tag pollen/decode
-         racket/date)
+         racket/date racket/string)
 (provide (all-defined-out))
 
 
@@ -11,14 +11,19 @@
 (define (get-year)
   (number->string (date-year (current-date))))
 
-(define (splice? tag var varname)
-	(if (equal? var "") "" `(,tag [[class ,varname]] ,var)))
+(define (splice-tag? tag class-name content)
+	(if (equal? content "") "" `(,tag [[class ,class-name]] ,content)))
+
+(define-syntax-rule (splice? tag var)
+	(splice-tag? tag (symbol->string 'var) var))
+
+(define-syntax-rule (if-var var content)
+	(if (not (equal? var ""))
+		content
+		""))
 
 (define (root . elements)
-  (let 
-    ([output (decode-elements elements 
-							  #:txexpr-elements-proc decode-paragraphs)])
-	(txexpr 'root empty output)))
+	`(root ,@elements))
 
 (define (link url . elements)
   `(a [[href ,url]] ,@elements))
@@ -45,19 +50,44 @@
 			   #:city [city ""] 
 	  		   #:phone [phone ""]
 			   #:email [email ""]
+			   #:git [git ""]
 			   . elements)
-  `(div [[class "title"]]
-		(h1 ,@elements)
-	    ,(splice? 'span street "street")
-		,(splice? 'span city "city")
-		"\n"
-		,(splice? 'span phone "phone")
-		,(splice? 'span email "email")))
+  `(div [[class "header"]]
+		(div [[class "title"]]
+			 (h1 ,@elements))
+	    (div [[class "info"]]
+			 ,(splice? 'span street) (br)
+			 ,(splice? 'span city) (br)
+			 (br)
+			 (div [[class "contact"]]
+			 	  ,(if-var phone `(a [[href ,(string-append "tel:" phone)]] ,phone))
+				  ,(if-var email `(span "|"))
+			 	  ,(if-var email `(a [[href ,(string-append "mailto:" email)]] ,email))
+			 	  ,(if-var git `(span "|"))
+				  ,(if-var git `(a [[href ,git]] "Github"))
+				))))
+
+(define (statement . elements)
+	`(div [[class "statement"]]
+		  ,@elements))
 
 (define (section title . elements)
 	`(div [[class "section"]] 
-		(div [[class "name"]] ,title)
-		(div [[class "content"]] ,@elements)))
+		(div [[class "sec-title"]] (span ,title))
+		(div [[class "paragraphs"]] ,@elements)))
+
+(define (or-exists? . vars)
+	(ormap 
+		(λ (var)
+			(if (equal? var "")
+				#f
+				#t))
+		vars))
+
+(define (themes tops)
+  (let ([top-list (map (curry string-trim #:left? #t) (string-split tops ","))])
+	`(div [[class "topics"]]
+		  ,@(map (curry splice-tag? 'span "topic") top-list))))
 
 (define (par #:org [org ""]
 			 #:area [area ""]
@@ -67,10 +97,24 @@
 			 #:topics [topics ""]
 			 . elements)
 	`(div [[class "paragraph"]]
-		,(splice? 'span org "org")
-		,(splice? 'span area "area")
-		,(splice? 'span role "role")
-		,(splice? 'span date "date")
-		,(splice? 'span loc "loc")
-		,(splice? 'span topics "topics")
-		(p ,@elements)))
+		(div [[class "par-head"]]
+		  (div [[class "organization"]]
+			,(splice? 'span org)
+			,(splice? 'span area))
+		  (div [[class "spacetime"]]
+			,(splice? 'span date)
+			,(splice? 'span loc)))
+		(div [[class "role_n_topics"]]
+			,(splice? 'span role)
+			,(if (equal? topics "") "" (themes topics)))
+		(div [[class "content"]] ,@elements)))
+
+(define (table . rows)
+  `(table
+	,@(map (λ (row)
+        	  `(tr ,@(map
+			          (λ (data) 
+					  	 `(td ,data))
+					  (filter (λ (data) (not (equal? data "\n")))
+							  (string-split row ",")))))
+    rows)))

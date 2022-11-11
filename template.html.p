@@ -15,9 +15,9 @@
             ◊(->html doc)
         </main>
     <footer>
-        <p class="copyright">
-            ◊(get-year)
-        </p>
+        ◊; <p class="copyright">
+        ◊;     ◊(get-year)
+        ◊; </p>
     </footer>
 </body>
 </html>
