@@ -106,7 +106,7 @@
 		◊e{
 		◊table{
 			seit 03/20   ,Inspirer bei der Hacker School
-			seit 2016    ,Gruppenleiter im Spatzennest Tübingen in acht; Teamleiter in einer Freizeit
+			seit 2016    ,Gruppenleiter im Spatzennest Tübingen in acht Freizeiten; Teamleiter in einer Freizeit
 			2018 - 2020  ,Nachhilfelehrer in verschiedenen Fächern
 		}
 		}
