@@ -55,7 +55,7 @@
 /* End of CSS Reset */
 
 main {
-	margin: 30px 10px;
+	margin: 75px 10px;
 }
 
 :root {
@@ -65,7 +65,7 @@ main {
     line-height: 1.5;
     color: var(--font-clr);
     hyphens: auto;
-	max-width: 750px;
+	max-width: 650px;
 	margin: auto;
 	
 	--cv1: #a00;
@@ -121,13 +121,18 @@ ul {
 	left: -0.25em;
 }*/
 
-h1,h2,h3,h4, .sec-title, .par-head, .org, .area, .role, .topics, .info{
+h1,h2,h3,h4, .sec-title, .topics, .info{
 	font-family: 'Source Sans Pro';
 }
 
+/* .par-head, .org, .area, .role {
+	
+} */
+
 h1 {
 	font-size: 1.8rem;
-	font-weight: 600;
+	line-height: 2.3rem;
+	font-weight: 500;
 }
 
 .header {
@@ -135,7 +140,7 @@ h1 {
 	width: 70%;
 	text-transform: uppercase;
 	text-align: center;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.15em;
 }
 
 .title {
@@ -151,14 +156,21 @@ h1 {
 .contact {
 	display: flex;
 	justify-content: space-around;
+	margin: 0.2rem 0 0 0;
 }
 
 .contact > * {
-	padding: 0 0.15rem;
+	padding: 0 0.4rem;
 }
 
 .street, .city, .phone, .email, .git, .contact{
 	white-space: nowrap;
+	font-size: 0.87rem;
+	font-weight: 400;
+}
+
+.street {
+	margin: 0 0.8rem 0 0;
 }
 
 .statement {
@@ -180,20 +192,15 @@ h1 {
 	margin: 0.2rem 0 0 0.2rem;
 }
 
-.paragraphs {
-	margin: 1rem 0;
-
-}
-
 .paragraph {
-	margin: 1.3rem 0;
+	margin: 0.3rem 0;
 }
 
-.par-head {
+.par-head, .role_n_topics{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 0.5rem;
+	margin: 0 0.5rem;
 }
 
 .organization, .spacetime {
@@ -211,54 +218,54 @@ h1 {
 }
 
 .org {
-	color: var(--cv1);
-	font-weight: 400;
-	font-size: 1.4rem;
+	font-weight: 600;
+	font-size: 1.3rem;
 }
 
 .area {
-	color: var(--cv1);
+	display: none;
+
 	font-weight: 300;
 }
 
 .date, .loc {
-	font-family: 'Fira Code';
-	opacity: 0.8;
-	letter-spacing: -0.7px;
-	padding: 0 1rem 0 0;
-	font-size: 90%;
+	font-size: 1.05rem;
+	font-weight: 600;
 }
 
-.role_n_topics {
-	display: flex;
-	justify-content: space-between;
-	margin: 0.5rem;
+.loc {
+	display: none;
 }
 
 .role {
 	font-weight: 600;
+	font-style: italic;
 	font-size: 90%;
 }
 
 .topics {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: flex-end;
+	justify-content: space-around;
 	text-transform: uppercase;
-	margin: 0 0 0.4rem 0;
 	opacity: 0.9;
 	font-size: 70%;
 	font-weight: 400;
+
+	display: none;
 }
 
 .topic {
-	padding: 0 0.7rem 0 0;
+	padding: 0 0.4rem 0 0;
+}
+
+.topic:nth-last-child(1) {
+	padding: 0;
 }
 
 .content {
-	font-size: 96%;
-	margin: auto;
-	width: 70%;
+	margin: 1rem auto;
+	width: 90%;
 }
 
 tr td:nth-child(1) {
