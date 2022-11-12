@@ -59,8 +59,9 @@ main {
 }
 
 :root {
-    font-family: "Fira Sans", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Charter', "Fira Sans", sans-serif;
     font-size: 16px;
+	font-weight: 500;
     line-height: 1.5;
     color: var(--font-clr);
     hyphens: auto;
@@ -86,7 +87,7 @@ main {
 }
 
 a {
-	color: black;
+	color: inherit;
 	text-decoration: none;
 	height: 1rem;
 	line-height: 1rem;
@@ -120,31 +121,36 @@ ul {
 	left: -0.25em;
 }*/
 
-h1,h2,h3,h4 {
-	font-weight: 400;
-	width: 80%;
+h1,h2,h3,h4, .sec-title, .par-head, .org, .area, .role, .topics, .info{
+	font-family: 'Source Sans Pro';
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 1.8rem;
+	font-weight: 600;
 }
 
 .header {
 	margin: auto;
 	width: 70%;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.1em;
 }
 
 .title {
-	text-align: left;
-	margin: 1rem
+	margin: 1rem 0 0 0;
 }
 
 .info {
-	margin: 1rem;
+	margin: 0 0 1rem 0;
+	font-weight: 600;
+	text-transform: uppercase;
 }
 
 .contact {
 	display: flex;
+	justify-content: space-around;
 }
 
 .contact > * {
@@ -152,11 +158,7 @@ h1 {
 }
 
 .street, .city, .phone, .email, .git, .contact{
-	padding: 0 1rem 0 0;
 	white-space: nowrap;
-	opacity: 0.8;
-	font-family: 'Fira Code', Monaco, Menlo, monospace, sans-serif;
-	font-size: 90%;
 }
 
 .statement {
@@ -165,14 +167,14 @@ h1 {
 }
 
 .section {
-	margin: 2rem 1rem;
+	margin: 1rem 1rem 2rem;
 	padding-top: 0.2rem;
 	border-top: 2px solid black;
 }
 
 .sec-title {
-	font-weight: 600;
-	font-size: 80%;
+	font-weight: 700;
+	font-size: 85%;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	margin: 0.2rem 0 0 0.2rem;
@@ -221,9 +223,10 @@ h1 {
 
 .date, .loc {
 	font-family: 'Fira Code';
+	opacity: 0.8;
 	letter-spacing: -0.7px;
 	padding: 0 1rem 0 0;
-	font-size: 75%;
+	font-size: 90%;
 }
 
 .role_n_topics {
@@ -233,8 +236,8 @@ h1 {
 }
 
 .role {
-	font-weight: 500;
-	font-size: 80%;
+	font-weight: 600;
+	font-size: 90%;
 }
 
 .topics {
@@ -245,7 +248,7 @@ h1 {
 	margin: 0 0 0.4rem 0;
 	opacity: 0.9;
 	font-size: 70%;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 .topic {
