@@ -106,8 +106,8 @@
 		,(if-var role
 				 `(div [[class "role_n_topics"]]
 					   ,(splice? 'span role)
-					   ,(if (equal? topics "") "" (themes topics))))
-		(div [[class "content"]] ,@elements)))
+					   #;,(if-var topics (themes topics))))
+		(div [[class "content"]] ,@elements ,(if-var topics (themes topics)))))
 
 (define (table . rows)
   `(table
