@@ -85,7 +85,8 @@
 		vars))
 
 (define (themes tops)
-  (let ([top-list (map (curry string-trim #:left? #t) (string-split tops ","))])
+  (let ([top-list (map (curry string-trim #:left? #t) 
+  					   (string-split tops ","))])
 	`(div [[class "topics"]]
 		  ,@(map (curry splice-tag? 'span "topic") top-list))))
 
@@ -103,7 +104,7 @@
 			,(splice? 'span area))
 		  (div [[class "spacetime"]]
 			,(splice? 'span date)
-			,(splice? 'span loc)))
+			#;,(splice? 'span loc)))
 		(div [[class "role_n_topics"]]
 			,(splice? 'span role)
 			,(if (equal? topics "") "" (themes topics)))
@@ -113,8 +114,8 @@
   `(table
 	,@(map (λ (row)
         	  `(tr ,@(map
-			          (λ (data) 
+			          (λ (data)
 					  	 `(td ,data))
 					  (filter (λ (data) (not (equal? data "\n")))
 							  (string-split row ",")))))
-    rows)))
+		   rows)))
