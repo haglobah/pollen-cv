@@ -64,10 +64,10 @@
 
 		◊e{Erstellung und Verwaltung der ◊l["https://haglobah.github.io/Mastering-42/"]{Mastering 42}-Website}
 	}
-	◊par[#:org "ETH Zürich" #:area "" #:role "BSc Physik" #:date "14/09/2020-20/02/22" #:loc "Zürich" #:topics ""]{
+	◊par[#:org "ETH Zürich" #:area "" #:role "BSc Physik" #:date "14/09/2020-20/02/2022" #:loc "Zürich" #:topics ""]{
 
 		◊e{bis zum 3. Fachsemester}
-		◊(br)
+		◊(br)◊(br)
 		◊e{03/21 - 07/21 Teilnahme an ◊l["https://www.rootlinks.ch"]{rootlinks}}
 	}
 	◊par[#:org "Leibniz Kolleg" #:area "" #:role "Studium generale et sociale" #:date "03/10/2018-26/07/2019" #:loc "Tübingen" #:topics ""]{
