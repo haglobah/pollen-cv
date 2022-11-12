@@ -1,4 +1,12 @@
+#lang pollen
 
+◊(define light? #f)
+◊(define (insert color #:strong? [strong #f])
+(let ([intensity (if light?
+						 (if strong "dark" "light")
+						 (if strong "light" "dark"))])
+		 (string-append "var(--" color "-" intensity ")")))
+◊(define dark "#282D3F")
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -54,29 +62,38 @@
 
 /* End of CSS Reset */
 
+body {
+	background-color: ◊(insert "bg");
+}
+
 main {
-	margin: 30px 10px;
+	margin: 75px 10px;
 }
 
 :root {
-    font-family: 'Charter' ,"Fira Sans", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-size: 16px;
-	font-weight: 500;
+	font-weight: 400;
     line-height: 1.5;
-    color: var(--font-clr);
+    color: ◊(insert "font" #:strong? #t);
     hyphens: auto;
-	max-width: 750px;
+	max-width: 650px;
 	margin: auto;
 	
 	--cv1: #a00;
 	--cv2: #ccc;
 	--fst-clr-bg: #f1f5ff;
-	--fst-clr-weak: #97b6f0;
-    --fst-clr: #6E98E8;
-    --snd-clr-weak: #ecb1a2;
-    --snd-clr: #DC755C;
+	--fst-light: #97b6f0;
+    --fst-dark: #6E98E8;
+    --snd-light: #ecb1a2;
+    --snd-dark: #DC755C;
 
-    --font-clr: #4B4E6D;
+    --bg-dark: ◊|dark|;
+	--bg-light: white;
+	--font-dark: ◊|dark|;
+	--font-light: #e5e9f0;
+	--tag-light: #f9f9f9;
+	--tag-dark: #383d4f;
 	/*--bg-clr: #F9F4F5;*/ --bg-color: #F3F3F3;
 
     --hover-transition: all ease-in-out 75ms;
@@ -91,14 +108,14 @@ a {
 	text-decoration: none;
 	height: 1rem;
 	line-height: 1rem;
-	border-bottom: 3px solid white;
+	border-bottom: 3px solid ◊(insert "bg");
 	opacity: inherit;
 }
 
 a:hover {
 	height: 1rem;
 	line-height: 1rem;
-	border-bottom: 3px solid #696eac;
+	border-bottom: 3px solid ◊(insert "font" #:strong? #t);
 }
 
 a:visited {
@@ -121,43 +138,57 @@ ul {
 	left: -0.25em;
 }*/
 
-h1,h2,h3,h4, .sec-title, .par-head, .org, .area, .role, .topics{
-	font-family: 'Cooper Hewitt';
+h1,h2,h3,h4, .sec-title, .topics, .info{
+	font-family: 'Fira Sans';
 }
+
+/* .par-head, .org, .area, .role {
+	
+} */
 
 h1 {
 	font-size: 2rem;
+	line-height: 2.3rem;
 	font-weight: 400;
 }
 
 .header {
-	margin: auto;
-	width: 70%;
+	margin: 1.6rem auto;
+	width: 82%;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.15em;
 }
 
 .title {
-	text-align: left;
-	margin: 1rem
+	margin: 1rem 0 0 0;
 }
 
 .info {
-	margin: 1rem;
-	opacity: 0.8;
-	font-family: 'Cooper Hewitt', 'Fira Code', sans-serif;
-	font-size: 90%;
+	margin: 0 0 1rem 0;
+	font-weight: 600;
+	text-transform: uppercase;
 }
 
 .contact {
 	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	margin: 0.2rem 0 0 0;
 }
 
 .contact > * {
-	padding: 0 0.15rem;
+	margin: 0.2rem 0.4rem;
 }
 
 .street, .city, .phone, .email, .git, .contact{
-	padding: 0 1rem 0 0;
 	white-space: nowrap;
+	font-size: 0.87rem;
+	font-weight: 400;
+}
+
+.street {
+	margin: 0 0.8rem 0 0;
 }
 
 .statement {
@@ -166,33 +197,29 @@ h1 {
 }
 
 .section {
-	margin: 2rem 1rem;
+	margin: 1rem 1rem 2rem;
 	padding-top: 0.2rem;
-	border-top: 2px solid black;
+	border-top: 2px solid ◊(insert "snd");
 }
 
 .sec-title {
-	font-weight: 600;
-	font-size: 80%;
+	color: ◊(insert "snd");
+	font-weight: 500;
+	font-size: 95%;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	margin: 0.2rem 0 0 0.2rem;
 }
 
-.paragraphs {
-	margin: 1rem 0;
-
-}
-
 .paragraph {
-	margin: 1.3rem 0;
+	margin: 0.3rem 0;
 }
 
-.par-head {
+.par-head, .role_n_topics{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 0.5rem;
+	margin: 0 0.5rem;
 }
 
 .organization, .spacetime {
@@ -210,32 +237,32 @@ h1 {
 }
 
 .org {
-	color: var(--cv1);
+	color: ◊(insert "fst" #:strong? #t);
+	font-family: 'Fira Code';
 	font-weight: 400;
 	font-size: 1.4rem;
 }
 
 .area {
-	color: var(--cv1);
+	display: none;
+
 	font-weight: 300;
 }
 
 .date, .loc {
 	font-family: 'Fira Code';
-	opacity: 0.8;
-	letter-spacing: -0.7px;
-	padding: 0 1rem 0 0;
-	font-size: 90%;
+	font-size: 1.05rem;
+	letter-spacing: -0.1rem;
+	font-weight: 400;
 }
 
-.role_n_topics {
-	display: flex;
-	justify-content: space-between;
-	margin: 0.5rem;
+.loc {
+	display: none;
 }
 
 .role {
-	font-weight: 500;
+	font-weight: 400;
+	font-style: italic;
 	font-size: 90%;
 }
 
@@ -243,21 +270,34 @@ h1 {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-end;
-	text-transform: uppercase;
-	margin: 0 0 0.4rem 0;
-	opacity: 0.9;
-	font-size: 70%;
+	text-transform: lowercase;
+	margin: 0.35rem 0 0 0;
+	font-size: 82%;
 	font-weight: 400;
+	color: ◊(insert "snd");
 }
 
 .topic {
-	padding: 0 0.7rem 0 0;
+	margin: 0.1rem 0 0.1rem 0.6rem;
+	padding: 0 4px 0 4px;
+	background-color: ◊(insert "tag");
+	border-radius: 6px;
+	line-height: 1.3em;
+}
+
+.topic::before {
+	font-size: 85%;
+	content: "#";
+	padding: 0 0.1em 0 0;
+}
+
+.topic:nth-last-child(1) {
+	margin-right: 0;
 }
 
 .content {
-	font-size: 96%;
-	margin: auto;
-	width: 70%;
+	margin: 1rem auto;
+	width: 90%;
 }
 
 tr td:nth-child(1) {
