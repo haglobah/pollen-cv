@@ -56,14 +56,11 @@
 		(div [[class "title"]]
 			 (h1 ,@elements))
 	    (div [[class "info"]]
-			 ,(splice? 'span street) (br)
-			 ,(splice? 'span city) (br)
-			 (br)
+			 ,(splice? 'span street)
+			 ,(splice? 'span city)
 			 (div [[class "contact"]]
 			 	  ,(if-var phone `(a [[href ,(string-append "tel:" phone)]] ,phone))
-				  ,(if-var email `(span "|"))
 			 	  ,(if-var email `(a [[href ,(string-append "mailto:" email)]] ,email))
-			 	  ,(if-var git `(span "|"))
 				  ,(if-var git `(a [[href ,git]] "Github"))
 				))))
 
@@ -98,16 +95,18 @@
 			 #:topics [topics ""]
 			 . elements)
 	`(div [[class "paragraph"]]
-		(div [[class "par-head"]]
-		  (div [[class "organization"]]
-			,(splice? 'span org)
-			,(splice? 'span area))
-		  (div [[class "spacetime"]]
-			,(splice? 'span date)
-			#;,(splice? 'span loc)))
-		(div [[class "role_n_topics"]]
-			,(splice? 'span role)
-			,(if (equal? topics "") "" (themes topics)))
+		,(if-var org 
+				 `(div [[class "par-head"]]
+					   (div [[class "organization"]]
+							,(splice? 'span org)
+							,(splice? 'span area))
+					   (div [[class "spacetime"]]
+							,(splice? 'span date)
+							,(splice? 'span loc))))
+		,(if-var role
+				 `(div [[class "role_n_topics"]]
+					   ,(splice? 'span role)
+					   ,(if (equal? topics "") "" (themes topics))))
 		(div [[class "content"]] ,@elements)))
 
 (define (table . rows)
