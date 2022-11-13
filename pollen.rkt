@@ -81,6 +81,9 @@
 				#t))
 		vars))
 
+(define (role rol)
+	`(span [[class "role"]] ,rol))
+
 (define (themes tops)
   (let ([top-list (map (curry string-trim #:left? #t) 
   					   (string-split tops ","))])
@@ -89,10 +92,10 @@
 
 (define (par #:org [org ""]
 			 #:area [area ""]
-			 #:role [role ""] 
+			 #:role [rol ""] 
 			 #:date [date ""]
 			 #:loc [loc ""]
-			 #:topics [topics ""]
+			 #:topics [topics ""] #:show-tops? [show-tops #t]
 			 . elements)
 	`(div [[class "paragraph"]]
 		,(if-var org 
@@ -103,11 +106,15 @@
 					   (div [[class "spacetime"]]
 							,(splice? 'span date)
 							,(splice? 'span loc))))
-		,(if-var role
+		,(if-var rol
 				 `(div [[class "role_n_topics"]]
-					   ,(splice? 'span role)
+					   ,(if-var rol (role rol))
 					   #;,(if-var topics (themes topics))))
-		(div [[class "content"]] ,@elements ,(if-var topics (themes topics)))))
+		(div [[class "content"]] 
+			 ,@elements 
+			 ,(if show-tops
+			 	  (if-var topics (themes topics))
+				  ""))))
 
 (define (table . rows)
   `(table
