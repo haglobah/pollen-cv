@@ -1,6 +1,6 @@
 #lang pollen
 
-◊(define light? #f)
+◊(define light? #t)
 ◊(define (insert color #:strong? [strong #f])
 (let ([intensity (if light?
 						 (if strong "dark" "light")
@@ -129,6 +129,7 @@ span {
 
 ul {
 	margin: 0 0 0 1rem;
+	padding: 0;
 }
 
 /*uncomment to get dashes in the list*/
@@ -269,16 +270,16 @@ h1 {
 .topics {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: flex-end;
+	justify-content: flex-start;
 	text-transform: lowercase;
-	margin: 0.35rem 0 0 0;
+	margin: 0.1rem 0 0.35rem 0;
 	font-size: 82%;
 	font-weight: 400;
 	color: ◊(insert "snd");
 }
 
 .topic {
-	margin: 0.1rem 0 0.1rem 0.6rem;
+	margin: 0.1rem 0.6rem 0.1rem 0;
 	padding: 0 4px 0 4px;
 	background-color: ◊(insert "tag");
 	border-radius: 6px;
