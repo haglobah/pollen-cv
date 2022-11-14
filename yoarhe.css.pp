@@ -1,6 +1,6 @@
 #lang pollen
 
-◊(define light? #t)
+◊(define light? #f)
 ◊(define (insert color #:strong? [strong #f])
 (let ([intensity (if light?
 						 (if strong "dark" "light")
@@ -104,7 +104,7 @@ main {
 }
 
 a {
-	color: inherit;
+	color: ◊(insert "fst");
 	text-decoration: none;
 	height: 1rem;
 	line-height: 1rem;
@@ -113,13 +113,10 @@ a {
 }
 
 a:hover {
+	color: ◊(insert "fst" #:strong? #t);
 	height: 1rem;
 	line-height: 1rem;
 	border-bottom: 3px solid ◊(insert "font" #:strong? #t);
-}
-
-a:visited {
-	color: inherit;
 }
 
 span {
