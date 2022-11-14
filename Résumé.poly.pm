@@ -112,7 +112,7 @@
 	}
 	◊par[#:org "Carlo-Schmid-Gymnasium" #:area "" #:role "" #:date "2010-2018" #:loc "Tübingen" #:topics ""]{
 
-		Abschlussnote 1,0; Preis für den besten Abiturienten in Chemie
+		Final grade 1.0; Price for the best Abitur in Chemistry
 		◊(br)◊(br)
 		◊e{
 		◊table{
