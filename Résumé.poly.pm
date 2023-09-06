@@ -1,6 +1,6 @@
 #lang pollen
 
-◊title[#:street "Dammstraße 5" #:city "74076 Heilbronn" #:phone "+49 1573 6830713" #:email "beat.hagenlocher@posteo.de" #:git "https://github.com/haglobah"]{Beat Hagenlocher}
+◊title[#:street "Dammstraße 5" #:city "74076 Heilbronn" #:phone "+49 1573 6830713" #:email "hagenlob@posteo.de" #:git "https://github.com/haglobah"]{Beat Hagenlocher}
 
 ◊; ◊statement{
 
@@ -11,7 +11,10 @@
 
 	◊par{
 		◊role{Programming Languages}
-		◊themes{Haskell, Python, Clojure, Common Lisp, C#, C++, C, Racket, Rust}
+		◊themes{Elixir, Haskell, Python, Clojure, C#, C++, C, Racket, Rust}
+		
+		◊role{Programming}
+		◊themes{Git, Docker, Nix}
 
 		◊role{Organizational Development}
 		◊themes{Sociocracy, The Lean Startup, Start with Why, Reinventing Organizations}
@@ -23,12 +26,12 @@
 
 ◊section["Work Experience"]{
 
-	◊par[#:org "Hacker School gGmbH" #:area "NGO: Education" #:role "Working Student" #:date "02/2021-today" #:loc "Hamburg/Remote" #:topics "Sociocracy, Racket, Teaching"]{
+	◊par[#:org "Hacker School gGmbH" #:area "NGO: Education" #:role "Working Student" #:date "02/2021-03/2023" #:loc "Hamburg/Remote" #:topics "Sociocracy, Racket, Teaching"]{
 
 		◊ul{
 			◊li{Developed & held courses}
 			◊li{Created a course website with ◊l["pollenpub.com"]{Pollen}}
-			◊li{Introduced the usage of a knowledge base system}
+			◊li{Introduced a knowledge base system}
 		}
 
 	}
@@ -47,7 +50,7 @@
 			◊li{Planned and executed the Recruiting of the 3rd batch.}
 		}
 	}
-	◊par[#:org "Spatzennest Tübingen" #:area "" #:role "Team Leader – once" #:date "2017-today" #:loc "Tübingen" #:topics ""]{
+	◊par[#:org "Spatzennest Tübingen" #:area "" #:role "Team Leader – twice" #:date "2017-today" #:loc "Tübingen" #:topics ""]{
 		
 		Led a team (of group leaders and children) over the course of the 3-week kid's camp.
 		Planned and conducted the preparatory weekends and moderated plenary sessions.
@@ -88,7 +91,7 @@
 
 ◊section["Education"]{
 
-	◊par[#:org "42 Heilbronn" #:area "Programming School" #:role "Student" #:date "03/2022-Heute" #:loc "" #:topics "C, Racket"]{
+	◊par[#:org "42 Heilbronn" #:area "Programming School" #:role "Student" #:date "03/2022-Heute" #:loc "" #:topics "C, C++, Elixir, Racket"]{
 
 		◊e{Creation and Maintenance of the ◊l["https://haglobah.github.io/Mastering-42/"]{Mastering 42-Website}}
 	}

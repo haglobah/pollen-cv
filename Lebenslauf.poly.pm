@@ -1,6 +1,6 @@
 #lang pollen
 
-◊title[#:street "Dammstraße 5" #:city "74076 Heilbronn" #:phone "+49 1573 6830713" #:email "beat.hagenlocher@posteo.de" #:git "https://github.com/haglobah"]{Beat Hagenlocher}
+◊title[#:street "Dammstraße 5" #:city "74076 Heilbronn" #:phone "+49 1573 6830713" #:email "hagenlob@posteo.de" #:git "https://github.com/haglobah"]{Beat Hagenlocher}
 
 ◊; ◊statement{
 
@@ -11,7 +11,10 @@
 
 	◊par{
 		◊role{Programmiersprachen}
-		◊themes{Haskell, Python, Clojure, Common Lisp, C#, C++, C, Racket, Rust}
+		◊themes{Elixir, Haskell, Python, Clojure, C#, C++, C, Racket, Rust}
+		
+		◊role{Programmieren}
+		◊themes{Git, Docker, Nix}
 
 		◊role{Organisationsentwicklung}
 		◊themes{Soziokratie, The Lean Startup, Start with Why, Reinventing Organizations}
@@ -23,9 +26,9 @@
 
 ◊section["Arbeitserfahrung"]{
 
-	◊par[#:org "Hacker School gGmbH" #:area "NGO: Bildung" #:role "Werkstudent" #:date "02/2021-Heute" #:loc "Hamburg/Remote" #:topics "Soziokratie, Racket, Lehre"]{
+	◊par[#:org "Hacker School gGmbH" #:area "NGO: Bildung" #:role "Werkstudent" #:date "02/2021-03/2023" #:loc "Hamburg/Remote" #:topics "Soziokratie, Racket, Lehre"]{
 
-		(Weiter-)Entwicklung von Kurskonzepten, Durchführung von Kursen als Team-Inspirer sowie die (technologische) Weiterentwicklung der Hacker School selbst.
+		(Weiter-)Entwicklung von Kurskonzepten, Durchführung von Kursen als Team-Inspirer sowie die (technologische) Weiterentwicklung der Hacker School.
 
 	}
 	◊par[#:org "Deutsche SchülerAkademie" #:area "" #:role "Kursleitung" #:date "16 Tage | 06-07/2022" #:loc "Wolfsberg" #:topics "Lernen, Lehre" #:show-tops? #t]{
@@ -38,7 +41,7 @@
 		Planung und Durchführung von wöchentlichen Inputs/Workshops. Coaching eines Challenge-Teams sowie Mitarbeit an Organisationsstruktur und Knowledge Base.
 		Planung und Durchführung der Bewerbungsgespräche des 3. Batches.
 	}
-	◊par[#:org "Spatzennest Tübingen" #:area "" #:role "Teamleiter – in bisher einer Freizeit" #:date "2017-Heute" #:loc "Tübingen" #:topics ""]{
+	◊par[#:org "Spatzennest Tübingen" #:area "" #:role "Teamleiter – in bisher zwei Freizeiten" #:date "2017-Heute" #:loc "Tübingen" #:topics ""]{
 		
 		Co-Leitung der 2. Freizeit des evangelischen Waldheims Spatzennest.
 		Konzeption und Durchführung der Vorbereitungswochenenden, Leitung der Küche für Gruppenleiter, Leitung von Plena sowie Planung der Feste.
@@ -77,7 +80,7 @@
 
 ◊section["Bildungsweg"]{
 
-	◊par[#:org "42 Heilbronn" #:area "Programmierschule" #:role "Student" #:date "03/2022-Heute" #:loc "" #:topics "C, Racket"]{
+	◊par[#:org "42 Heilbronn" #:area "Programmierschule" #:role "Student" #:date "03/2022-Heute" #:loc "" #:topics "C, C++, Elixir, Racket"]{
 
 		◊e{Erstellung und Verwaltung der ◊l["https://haglobah.github.io/Mastering-42/"]{Mastering 42-Website}}
 	}
