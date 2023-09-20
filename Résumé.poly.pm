@@ -91,7 +91,7 @@
 
 ◊section["Education"]{
 
-	◊par[#:org "42 Heilbronn" #:area "Programming School" #:role "Student" #:date "03/2022-Heute" #:loc "" #:topics "C, C++, Elixir, Racket"]{
+	◊par[#:org "42 Heilbronn" #:area "Programming School" #:role "Student" #:date "03/2022-today" #:loc "" #:topics "C, C++, Elixir, Racket"]{
 
 		◊e{Creation and Maintenance of the ◊l["https://haglobah.github.io/Mastering-42/"]{Mastering 42-Website}}
 	}
