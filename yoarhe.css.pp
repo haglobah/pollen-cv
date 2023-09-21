@@ -216,7 +216,7 @@ h1 {
 }
 
 .section {
-	margin: 1rem 1rem 2rem;
+	margin: 1.5rem;
 	padding-top: 0.2rem;
 	border-top: 2px solid ◊(insert "snd");
 }
