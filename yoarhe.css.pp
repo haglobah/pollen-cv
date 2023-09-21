@@ -1,6 +1,6 @@
 #lang pollen
 
-◊(define light? #f)
+◊(define light? #t)
 ◊(define (insert color #:strong? [strong #f])
 (let ([intensity (if light?
 						 (if strong "dark" "light")
@@ -122,7 +122,7 @@ a {
 	text-decoration: none;
 	height: 1rem;
 	line-height: 1rem;
-	border-bottom: 2px solid ◊(insert "bg");
+	border-bottom: 2px transparent ◊(insert "bg");
 	opacity: inherit;
 }
 
@@ -130,7 +130,7 @@ a:hover {
 	color: ◊(insert "fst" #:strong? #t);
 	height: 1rem;
 	line-height: 1rem;
-	border-bottom: 3px solid ◊(insert "fst" #:strong? #f);
+	border-bottom: 2px solid ◊(insert "fst" #:strong? #f);
 }
 
 span {
@@ -193,11 +193,7 @@ h1 {
 	display: flex;
 	justify-content: space-around;
 	flex-flow: row wrap;
-	margin: 0.2rem 0 0 0;
-}
-
-.contact > * {
-	margin: 0.2rem 0.4rem;
+	margin: 0.4rem;
 }
 
 .street, .city, .phone, .email, .git, .contact{
@@ -219,6 +215,12 @@ h1 {
 	margin: 1.5rem;
 	padding-top: 0.2rem;
 	border-top: 2px solid ◊(insert "snd");
+}
+
+@media print {
+	.section {
+		break-inside: avoid;
+	}
 }
 
 .sec-title {
