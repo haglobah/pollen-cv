@@ -70,12 +70,6 @@ main {
 	margin: 75px 10px;
 }
 
-@media print {
-	main {
-		margin: 0 0 0 0;
-	}
-}
-
 :root {
     font-family: "Fira Sans", sans-serif;
     font-size: 16px;
@@ -107,14 +101,6 @@ main {
     --shadow-normal: rgba(0, 0, 0, 0.2) 2px 5px 10px -4px;
     --border-top-normal: 1px solid rgba(255, 255, 255, 0.1);
     --border-bottom-normal: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-@media print {
-	:root {
-		font-size: 12px;
-		line-height: 1.4;
-		max-width: initial;
-	}
 }
 
 a {
@@ -164,13 +150,6 @@ h1 {
 	font-weight: 400;
 }
 
-@media print {
-	h1 {
-		font-size: 1.8rem;
-		line-height: 2rem;
-	}
-}
-
 .header {
 	margin: 1.6rem auto;
 	width: 82%;
@@ -217,12 +196,6 @@ h1 {
 	border-top: 2px solid ◊(insert "snd");
 }
 
-@media print {
-	.section {
-		break-inside: avoid;
-	}
-}
-
 .sec-title {
 	color: ◊(insert "snd");
 	font-weight: 500;
@@ -230,12 +203,6 @@ h1 {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	margin: 0.2rem 0 0 0.2rem;
-}
-
-@media print {
-	.sec-title {
-		font-size: 0.8rem;
-	}
 }
 
 .paragraph {
@@ -270,12 +237,6 @@ h1 {
 	font-size: 1.4rem;
 }
 
-@media print {
-	.org {
-		font-size: 1.3rem;
-	}
-}
-
 .area {
 	display: none;
 
@@ -287,12 +248,6 @@ h1 {
 	font-size: 1.05rem;
 	letter-spacing: -0.1rem;
 	font-weight: 400;
-}
-
-@media print {
-	.date, .loc {
-		font-size: 0.9rem;
-	}
 }
 
 .loc {

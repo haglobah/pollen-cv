@@ -15,7 +15,8 @@
         <meta property="og:title" value="◊(select 'h1 doc)">
         <title>◊(construct-head ◊|here| (select 'h1 doc))</title> <!-- or ◊|here| -->
 		<link rel="stylesheet" href="fonts.css">
-		<link rel="stylesheet" href="yoarhe.css">
+		<link rel="stylesheet" href="classic.css">
+		<link rel="stylesheet" href="print.css">
     </head>
     <body>
         <main>
