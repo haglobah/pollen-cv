@@ -11,10 +11,10 @@
 
 	◊par{
 		◊role{Programming Languages}
-		◊themes{Elixir, Haskell, Python, Clojure, C#, C++, C, Racket, Rust}
+		◊themes{Elixir, Racket, Haskell, C, Clojure, Rust}
 		
 		◊role{Programming}
-		◊themes{Git, Docker, Nix}
+		◊themes{Git, Docker, Nix, Functional Programming}
 
 		◊role{Organizational Development}
 		◊themes{Sociocracy, The Lean Startup, Start with Why, Reinventing Organizations}
@@ -35,6 +35,20 @@
 		}
 
 	}
+	◊par[#:org "active group GmbH" #:area "Software Development" #:role "Intern" #:date "03/2020-05/2020" #:loc "Tübingen" #:topics "Haskell, Clojure, Machine Learning, Emacs, magit, pair programming"]{
+
+		Implemented a Web Server for a Machine Learning Project in Haskell.
+		Developed parts of the project's frontend in ClojureScript.
+
+	}
+	◊par[#:org "TNG Technology Consulting" #:area "Technology Consulting" #:role "Intern" #:date "12/2019-03/2020" #:loc "Munich" #:topics "C#, Python, Unity, Reinforcement Learning, Tensorflow, git"]{
+
+		Developed AI Agents for the Game Blobby VR.
+		Looked after ◊;{managed?} the TNG booth at OOP 2020.
+	}
+
+	◊section{ } 
+
 	◊par[#:org "Deutsche SchülerAkademie" #:area "" #:role "Course Instructor" #:date "16 days | 06-07/2022" #:loc "Wolfsberg" #:topics "Learning, Teaching" #:show-tops? #t]{
 
 		Taught a 50-hour university-level course called ◊e{How People learn}.
@@ -63,17 +77,6 @@
 	◊par[#:org "" #:area "" #:role "Group Leader – eight times" #:date "" #:loc "Tübingen" #:topics ""]{
 		
 		◊; Paedagogically supervised 12-20 children.
-	}
-	◊par[#:org "active group GmbH" #:area "Software Development" #:role "Intern" #:date "03/2020-05/2020" #:loc "Tübingen" #:topics "Haskell, Clojure, Machine Learning, Emacs, magit"]{
-
-		Implemented a Web Server for a Machine Learning Project in Haskell.
-		Developed parts of the project's frontend in ClojureScript (both solo and pair programming).
-
-	}
-	◊par[#:org "TNG Technology Consulting" #:area "Technology Consulting" #:role "Intern" #:date "12/2019-03/2020" #:loc "Munich" #:topics "C#, Python, Unity, Reinforcement Learning, Tensorflow, git"]{
-
-		Developed KI-Agents for the Game Blobby VR.
-		Looked after ◊;{managed?} the TNG booth at OOP 2020.
 	}
 	◊; ◊par[#:org "bild der wissenschaft/natur" #:area "Editorial Office" #:role "Intern" #:date "5 days | 09/2018" #:loc "Leinfelden-Echterdingen" #:topics ""]{
 
