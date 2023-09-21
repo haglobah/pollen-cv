@@ -70,6 +70,12 @@ main {
 	margin: 75px 10px;
 }
 
+@media print {
+	main {
+		margin: 0 0 0 0;
+	}
+}
+
 :root {
     font-family: "Fira Sans", sans-serif;
     font-size: 16px;
@@ -103,12 +109,20 @@ main {
     --border-bottom-normal: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+@media print {
+	:root {
+		font-size: 12px;
+		line-height: 1.4;
+		max-width: initial;
+	}
+}
+
 a {
 	color: ◊(insert "fst");
 	text-decoration: none;
 	height: 1rem;
 	line-height: 1rem;
-	border-bottom: 3px solid ◊(insert "bg");
+	border-bottom: 2px solid ◊(insert "bg");
 	opacity: inherit;
 }
 
@@ -116,7 +130,7 @@ a:hover {
 	color: ◊(insert "fst" #:strong? #t);
 	height: 1rem;
 	line-height: 1rem;
-	border-bottom: 3px solid ◊(insert "font" #:strong? #t);
+	border-bottom: 3px solid ◊(insert "fst" #:strong? #f);
 }
 
 span {
@@ -148,6 +162,13 @@ h1 {
 	font-size: 2rem;
 	line-height: 2.3rem;
 	font-weight: 400;
+}
+
+@media print {
+	h1 {
+		font-size: 1.8rem;
+		line-height: 2rem;
+	}
 }
 
 .header {
@@ -203,10 +224,16 @@ h1 {
 .sec-title {
 	color: ◊(insert "snd");
 	font-weight: 500;
-	font-size: 95%;
+	font-size: 0.95rem;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	margin: 0.2rem 0 0 0.2rem;
+}
+
+@media print {
+	.sec-title {
+		font-size: 0.8rem;
+	}
 }
 
 .paragraph {
@@ -241,6 +268,12 @@ h1 {
 	font-size: 1.4rem;
 }
 
+@media print {
+	.org {
+		font-size: 1.3rem;
+	}
+}
+
 .area {
 	display: none;
 
@@ -252,6 +285,12 @@ h1 {
 	font-size: 1.05rem;
 	letter-spacing: -0.1rem;
 	font-weight: 400;
+}
+
+@media print {
+	.date, .loc {
+		font-size: 0.9rem;
+	}
 }
 
 .loc {
