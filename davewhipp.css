@@ -54,10 +54,6 @@
 
 /* End of CSS Reset */
 
-main {
-	margin: 30px 10px;
-}
-
 :root {
     font-family: 'Charter' ,"Fira Sans", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
@@ -137,7 +133,7 @@ h1 {
 
 .title {
 	text-align: left;
-	margin: 1rem
+	margin: 4rem 1rem 1rem 1rem;
 }
 
 .info {

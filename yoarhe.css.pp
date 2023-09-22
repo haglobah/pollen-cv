@@ -66,10 +66,6 @@ body {
 	background-color: ◊(insert "bg");
 }
 
-main {
-	margin: 75px 10px;
-}
-
 :root {
     font-family: "Fira Sans", sans-serif;
     font-size: 16px;
@@ -156,6 +152,10 @@ h1 {
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: 0.15em;
+}
+
+.title {
+	margin: 4rem 0 0 0;
 }
 
 .info {

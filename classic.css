@@ -54,10 +54,6 @@
 
 /* End of CSS Reset */
 
-main {
-	margin: 75px 10px;
-}
-
 :root {
     font-family: 'Source Serif Pro', serif;
     font-size: 16px;
@@ -145,7 +141,7 @@ h1 {
 }
 
 .title {
-	margin: 1rem 0 0 0;
+	margin: 4rem 0 0 0;
 }
 
 .info {
