@@ -199,6 +199,7 @@ h1 {
 
 .par-head, .role_n_topics{
 	display: flex;
+	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 0.5rem;
