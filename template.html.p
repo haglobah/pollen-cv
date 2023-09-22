@@ -5,7 +5,7 @@
 					   ""
 					   (string-trim (symbol->string here) ".html"))
 				   " "
-				   title))
+				   (if title title "Beat Hagenlocher")))
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,6 +14,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" value="◊(select 'h1 doc)">
         <title>◊(construct-head ◊|here| (select 'h1 doc))</title> <!-- or ◊|here| -->
+        ◊when/splice[(equal? (symbol->string ◊|here|) "index.html")]{
+            <script src="https://cdn.tailwindcss.com"></script>
+        }
 		<link rel="stylesheet" href="fonts.css">
 		<link rel="stylesheet" href="yoarhe.css">
 		<link rel="stylesheet" href="print.css">

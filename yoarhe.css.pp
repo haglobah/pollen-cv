@@ -73,7 +73,6 @@ body {
     line-height: 1.5;
     color: ◊(insert "font" #:strong? #t);
     hyphens: auto;
-	max-width: 650px;
 	margin: auto;
 	
 	--cv1: #a00;
@@ -148,7 +147,7 @@ h1 {
 
 .header {
 	margin: 1.6rem auto;
-	width: 82%;
+	max-width: 500px;
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: 0.15em;
@@ -188,8 +187,9 @@ h1 {
 }
 
 .section {
-	margin: 1.5rem;
+	margin: 1.5rem auto;
 	padding-top: 0.2rem;
+	max-width: 625px;
 	border-top: 2px solid ◊(insert "snd");
 }
 
