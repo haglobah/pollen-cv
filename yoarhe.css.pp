@@ -1,6 +1,6 @@
 #lang pollen
 
-◊(define light? #t)
+◊(define light? #f)
 ◊(define (insert color #:strong? [strong #f])
 (let ([intensity (if light?
 						 (if strong "dark" "light")
@@ -158,12 +158,8 @@ h1 {
 	letter-spacing: 0.15em;
 }
 
-.title {
-	margin: 1rem 0 0 0;
-}
-
 .info {
-	margin: 0 0 1rem 0;
+	margin: 1rem 0;
 	font-weight: 600;
 	text-transform: uppercase;
 }
@@ -176,6 +172,7 @@ h1 {
 }
 
 .street, .city, .phone, .email, .git, .contact{
+	margin: 0.2rem;
 	white-space: nowrap;
 	font-size: 0.87rem;
 	font-weight: 400;

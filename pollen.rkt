@@ -56,12 +56,13 @@
 		(div [[class "title"]]
 			 (h1 ,@elements))
 	    (div [[class "info"]]
-			 ,(splice? 'span street)
-			 ,(splice? 'span city)
+			 (div [(class "adress")]
+			 	  ,(splice? 'span street)
+			 	  ,(splice? 'span city))
 			 (div [[class "contact"]]
-			 	  ,(if-var phone `(a [[href ,(string-append "tel:" phone)]] ,phone))
-			 	  ,(if-var email `(a [[href ,(string-append "mailto:" email)]] ,email))
-				  ,(if-var git `(a [[href ,git]] "Github"))
+			 	  ,(if-var phone `(a [[class "phone"] [href ,(string-append "tel:" phone)]] ,phone))
+			 	  ,(if-var email `(a [[class "email"] [href ,(string-append "mailto:" email)]] ,email))
+				  ,(if-var git `(a [[class "git"] [href ,git]] "Github"))
 				))))
 
 (define (statement . elements)
