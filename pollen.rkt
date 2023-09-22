@@ -23,7 +23,7 @@
 		""))
 
 (define (root . elements)
-	`(root ,@elements))
+	`(root [(class "block max-w-2xl mx-auto font-['Fira_Sans'] font-normal text-base hyphens-auto")],@elements))
 
 (define (link url . elements)
   `(a [[href ,url]] ,@elements))
@@ -52,24 +52,25 @@
 			   #:email [email ""]
 			   #:git [git ""]
 			   . elements)
-  `(div [[class "header"]]
+  `(div [[class "header text-center mt-8 mb-2 mx-auto max-w-lg uppercase tracking-widest"]]
 		(div [[class "title"]]
-			 (h1 ,@elements))
+			 (h1 [(class "text-2xl")],@elements))
 	    (div [[class "info"]]
-			 ,(splice? 'span street)
-			 ,(splice? 'span city)
-			 (div [[class "contact"]]
+			 (div [(class "flex flex-row justify-evenly my-2")]
+			 	  ,(splice? 'span street)
+			 	  ,(splice? 'span city))
+			 (div [[class "contact flex flex-row justify-around my-2 text-sm"]]
 			 	  ,(if-var phone `(a [[href ,(string-append "tel:" phone)]] ,phone))
 			 	  ,(if-var email `(a [[href ,(string-append "mailto:" email)]] ,email))
 				  ,(if-var git `(a [[href ,git]] "Github"))
 				))))
 
 (define (statement . elements)
-	`(div [[class "statement"]]
+	`(div [[class "statement italic"]]
 		  ,@elements))
 
 (define (section title . elements)
-	`(div [[class "section"]] 
+	`(div [[class "section m-6"]] 
 		(div [[class "sec-title"]] (span ,title))
 		(div [[class "paragraphs"]] ,@elements)))
 

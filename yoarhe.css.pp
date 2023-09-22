@@ -7,78 +7,10 @@
 						 (if strong "light" "dark"))])
 		 (string-append "var(--" color "-" intensity ")")))
 ◊(define dark "#282D3F")
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
-*, *::before, *::after {
-	box-sizing: border-box;
-  }
-  /*
-	2. Remove default margin
-  */
-  * {
-	margin: 0;
-  }
-  /*
-	3. Allow percentage-based heights in the application
-  */
-  html, body {
-	height: 100%;
-  }
-  /*
-	Typographic tweaks!
-	4. Add accessible line-height
-	5. Improve text rendering
-  */
-  body {
-	line-height: 1.5;
-	-webkit-font-smoothing: antialiased;
-  }
-  /*
-	6. Improve media defaults
-  */
-  img, picture, video, canvas, svg {
-	display: block;
-	max-width: 100%;
-  }
-  /*
-	7. Remove built-in form typography styles
-  */
-  input, button, textarea, select {
-	font: inherit;
-  }
-  /*
-	8. Avoid text overflows
-  */
-  p, h1, h2, h3, h4, h5, h6 {
-	overflow-wrap: break-word;
-  }
-  /*
-	9. Create a root stacking context
-  */
-  #root, #__next {
-	isolation: isolate;
-  }
-
-/* End of CSS Reset */
-
-body {
-	background-color: ◊(insert "bg");
-}
-
-main {
-	margin: 75px 10px;
-}
 
 :root {
-    font-family: "Fira Sans", sans-serif;
-    font-size: 16px;
-	font-weight: 400;
-    line-height: 1.5;
+	background-color: ◊(insert "bg");
     color: ◊(insert "font" #:strong? #t);
-    hyphens: auto;
-	max-width: 650px;
-	margin: auto;
 	
 	--cv1: #a00;
 	--cv2: #ccc;
@@ -123,76 +55,7 @@ span {
 	white-space: nowrap;
 }
 
-
-ul {
-	margin: 0 0 0 1rem;
-	padding: 0;
-}
-
-/*uncomment to get dashes in the list*/
-/*li:before {
-	content: "-";
-	position: relative;
-	left: -0.25em;
-}*/
-
-h1,h2,h3,h4, .sec-title, .topics, .info{
-	font-family: 'Fira Sans';
-}
-
-/* .par-head, .org, .area, .role {
-	
-} */
-
-h1 {
-	font-size: 2rem;
-	line-height: 2.3rem;
-	font-weight: 400;
-}
-
-.header {
-	margin: 1.6rem auto;
-	width: 82%;
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 0.15em;
-}
-
-.title {
-	margin: 1rem 0 0 0;
-}
-
-.info {
-	margin: 0 0 1rem 0;
-	font-weight: 600;
-	text-transform: uppercase;
-}
-
-.contact {
-	display: flex;
-	justify-content: space-around;
-	flex-flow: row wrap;
-	margin: 0.4rem;
-}
-
-.street, .city, .phone, .email, .git, .contact{
-	white-space: nowrap;
-	font-size: 0.87rem;
-	font-weight: 400;
-}
-
-.street {
-	margin: 0 0.8rem 0 0;
-}
-
-.statement {
-	font-style: italic;
-	
-}
-
 .section {
-	margin: 1.5rem;
-	padding-top: 0.2rem;
 	border-top: 2px solid ◊(insert "snd");
 }
 
