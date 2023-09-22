@@ -225,7 +225,7 @@ h1 {
 }
 
 .org, .area, .role, .date, .loc {
-	padding: 0 0.5rem 0 0;
+	padding: 0.1rem 0.5rem 0.1rem 0.1rem;
 }
 
 .org {
@@ -263,15 +263,15 @@ h1 {
 	flex-flow: row wrap;
 	justify-content: flex-start;
 	text-transform: lowercase;
-	margin: 0.1rem 0 0.35rem 0;
+	margin: 0 0 0.5rem 0;
 	font-size: 82%;
 	font-weight: 400;
 	color: ◊(insert "snd");
 }
 
 .topic {
-	margin: 0.1rem 0.6rem 0.1rem 0;
-	padding: 0 4px 0 4px;
+	margin: 0.2rem 0.6rem 0.2rem 0;
+	padding: 2px 4px 0 4px;
 	background-color: ◊(insert "tag");
 	border-radius: 6px;
 	line-height: 1.3em;
