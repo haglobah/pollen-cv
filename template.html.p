@@ -18,7 +18,7 @@
             <script src="https://cdn.tailwindcss.com"></script>
         }
 		<link rel="stylesheet" href="fonts.css">
-		<link rel="stylesheet" href="yoarhe.css">
+		<link rel="stylesheet" href="classic.css">
 		<link rel="stylesheet" href="print.css">
     </head>
     <body>

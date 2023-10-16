@@ -110,20 +110,20 @@
 	}
 	◊par[#:org "Leibniz Kolleg" #:area "" #:role "Studium generale et sociale" #:date "10/2018-07/2019" #:loc "Tübingen" #:topics ""]{
 
-		Obligatory seminars: Scientific Writing, Rhetorics, Writing for science, Seminar for scientific posters, Politics (in collaboration with lpb Baden-Württemberg), study trip to rome with focus on arts and archeology
-		◊(br)◊(br)
+		◊;{Obligatory seminars: Scientific Writing, Rhetorics, Writing for science, Seminar for scientific posters, Politics (in collaboration with lpb Baden-Württemberg), study trip to rome with focus on arts and archeology
+		◊(br)◊(br)}
 		Courses: Psychology, Medicine, Virology, Philosophy, Choir, Astrophysics, Sinology, Education, Theory of Science and Philosophy of Mind, Economics, Mathematics, Computer Science, Theater 
-		◊(br)◊(br)
+		◊;{◊(br)◊(br)
 		Two written term papers:
 		◊ul{
 			◊li{Über die Grenzen von Moral - Philosophy}
 			◊li{Ein neues Lernsystem - Psychology}
-		}
+		}}
 	}
 	◊par[#:org "Carlo-Schmid-Gymnasium" #:area "" #:role "" #:date "2010-2018" #:loc "Tübingen" #:topics ""]{
 
 		Final grade 1.0; Price for the best Abitur in Chemistry
-		◊(br)◊(br)
+		◊;{◊(br)◊(br)
 		◊e{
 		◊table{
 			2016 - 2018,Part of the Jazz club of the CSG Tübingen (Bass)
@@ -131,7 +131,7 @@
 			2016       ,Mentoring of refugees for half a year
 			2012 - 2015,Participation at the student research centre
 			}
-		}
+		}}
 	}
 	◊; ◊par[#:org "Grundschule Hechinger Eck" #:area "" #:role "" #:date "2006-2010" #:loc "Tübingen" #:topics ""]{
 
