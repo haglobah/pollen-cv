@@ -1,3 +1,5 @@
 compiled
 *.html
 *.css
+.direnv
+.envrc
