@@ -3,3 +3,4 @@ compiled
 *.css
 .direnv
 .envrc
+.devenv
