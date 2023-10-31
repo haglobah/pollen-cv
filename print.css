@@ -2,4 +2,8 @@
     :root {
         font-size: 12px;
     }
+
+    .paragraph {
+        page-break-after: avoid;
+    }
 }
