@@ -1,6 +1,6 @@
 #lang pollen
 
-◊title[#:street "Dammstraße 5," #:city "74076 Heilbronn" #:phone "+49 1573 6830713" #:email "hagenlob@posteo.de" #:website "https://haglobah.github.io/me" #:github "https://github.com/haglobah" #:linkedin "https://linkedin.com/in/beat-hagenlocher/"]{Beat Hagenlocher}
+◊title[#:street "Dammstraße 5," #:city "74076 Heilbronn" #:phone "+49 1573 6830713" #:email "bah@posteo.de" #:website "https://haglobah.github.io/me" #:github "https://github.com/haglobah" #:linkedin "https://linkedin.com/in/beat-hagenlocher/"]{Beat Hagenlocher}
 
 ◊; ◊statement{
 
