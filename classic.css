@@ -142,7 +142,7 @@ h1 {
 }
 
 .title {
-	margin: 4rem 0 0.375rem 0;
+	margin: 3.75rem 0 0.375rem 0;
 }
 
 .info {
@@ -215,7 +215,7 @@ h1 {
 	margin: 0.8rem 0;
 }
 
-.par-head, .roles {
+.par-head {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
@@ -223,6 +223,9 @@ h1 {
 }
 
 .roles {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: start;
 	font-style: italic;
 }
 
@@ -262,7 +265,7 @@ h1 {
 .role {
 	font-weight: 600;
 	font-style: italic;
-	font-size: 90%;
+	font-size: 95%;
 }
 
 .topics {
