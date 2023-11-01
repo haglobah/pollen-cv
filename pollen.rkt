@@ -50,7 +50,9 @@
 			   #:city [city ""] 
 	  		   #:phone [phone ""]
 			   #:email [email ""]
-			   #:git [git ""]
+			   #:website [website ""]
+			   #:github [github ""]
+			   #:linkedin [linkedin ""]
 			   . elements)
   `(div [[class "header"]]
 		(div [[class "title"]]
@@ -62,8 +64,12 @@
 			 (div [[class "contact"]]
 			 	  ,(if-var phone `(a [[class "phone"] [href ,(string-append "tel:" phone)]] ,phone))
 			 	  ,(if-var email `(a [[class "email"] [href ,(string-append "mailto:" email)]] ,email))
-				  ,(if-var git `(a [[class "git"] [href ,git]] "Github"))
-				))))
+				)
+			 (div [[class "links"]]
+				  ,(if-var website `(a [[class "website"] [href ,website]] "zxc"))
+				  ,(if-var github `(a [[class "github"] [href ,github]] "zxc"))
+				  ,(if-var linkedin `(a [[class "linkedin"] [href ,linkedin]] "zxc"))
+			 	))))
 
 (define (statement . elements)
 	`(div [[class "statement"]]
@@ -83,7 +89,7 @@
 		vars))
 
 (define (role rol)
-	`(span [[class "role"]] ,rol))
+	`(span [[class "roles"]] ,rol))
 
 (define (themes tops)
   (let ([top-list (map (curry string-trim #:left? #t) 

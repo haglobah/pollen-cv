@@ -1,6 +1,6 @@
 #lang pollen
 
-◊title[#:street "Dammstraße 5" #:city "74076 Heilbronn" #:phone "+49 1573 6830713" #:email "hagenlob@posteo.de" #:git "https://github.com/haglobah"]{Beat Hagenlocher}
+◊title[#:street "Dammstraße 5," #:city "74076 Heilbronn" #:phone "+49 1573 6830713" #:email "hagenlob@posteo.de" #:website "https://haglobah.github.io/me" #:github "https://github.com/haglobah" #:linkedin "https://linkedin.com/in/beat-hagenlocher/"]{Beat Hagenlocher}
 
 ◊; ◊statement{
 
@@ -9,19 +9,23 @@
 
 ◊section["Skills & Abilities"]{
 
-	◊par{
-		◊role{Programming Languages}
+	◊par[#:role "Programming Languages"]{
+
 		◊themes{Elixir, Racket, Haskell, C, Clojure, Rust}
-		
-		◊role{Programming}
-		◊themes{Git, Docker, Nix, Functional Programming}
-
-		◊role{Organizational Development}
-		◊themes{Sociocracy, The Lean Startup, Start with Why, Reinventing Organizations}
-
-		◊role{Design}
-		◊themes{Design Thinking, Systems Design, Designing your Life}
 	}
+
+	◊par[#:role "Programming"]{
+
+		◊themes{Git, Docker, Nix, Functional Programming}
+	}		
+	◊par[#:role "Organizational Development"]{
+
+		◊themes{Sociocracy, The Lean Startup, Start with Why, Reinventing Organizations}
+	}		
+	◊par[#:role "Design"]{
+
+		◊themes{Design Thinking, Systems Design, Designing your Life}
+	}		
 }
 
 ◊section["Work Experience"]{

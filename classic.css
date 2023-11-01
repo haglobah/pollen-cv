@@ -72,8 +72,8 @@
     --snd-clr-weak: #ecb1a2;
     --snd-clr: #DC755C;
 
-    --font-clr: #4B4E6D;
-	/*--bg-clr: #F9F4F5;*/ --bg-color: #F3F3F3;
+    --font-clr: #000;
+	/*--bg-clr: #F9F4F5;*/ --bg-color: #fff;
 
     --hover-transition: all ease-in-out 75ms;
 
@@ -145,8 +145,8 @@ h1 {
 }
 
 .info {
-	margin: 0 0 1rem 0;
-	font-weight: 600;
+	margin: 0 0 1.5rem 0;
+	font-weight: 500;
 	text-transform: uppercase;
 }
 
@@ -161,9 +161,16 @@ h1 {
 	margin: 0.2rem 0.4rem;
 }
 
-.street, .city, .phone, .email, .git, .contact{
+.links {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	margin: 0.2rem 0 0 0;
+}
+
+.street, .city, .phone, .email, .contact{
 	white-space: nowrap;
-	font-size: 0.87rem;
+	font-size: 0.9rem;
 }
 
 .street {
@@ -178,27 +185,30 @@ h1 {
 .section {
 	margin: 1rem 1rem 2rem;
 	padding-top: 0.2rem;
-	border-top: 2px solid black;
+	border-top: 1.5px solid black;
 }
 
 .sec-title {
-	font-weight: 700;
-	font-size: 85%;
-	letter-spacing: 2px;
+	font-weight: 800;
+	font-size: 80%;
+	letter-spacing: 1.7px;
 	text-transform: uppercase;
-	margin: 0.2rem 0 0 0.2rem;
+	margin: 0.1rem 0 0.5rem 0.2rem;
 }
 
 .paragraph {
-	margin: 0.3rem 0;
+	margin: 0.8rem 0;
 }
 
-.par-head, .role_n_topics{
+.par-head, .roles {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: center;
-	margin: 0 0.5rem;
+}
+
+.roles {
+	font-style: italic;
 }
 
 .organization, .spacetime {
@@ -216,19 +226,18 @@ h1 {
 }
 
 .org {
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 1.3rem;
 }
 
 .area {
 	display: none;
-
 	font-weight: 300;
 }
 
 .date, .loc {
-	font-size: 1.05rem;
-	font-weight: 600;
+	font-size: 1.2rem;
+	font-weight: 500;
 }
 
 .loc {
@@ -245,7 +254,7 @@ h1 {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
-	margin: 0 0 0.35rem 0;
+	margin: 0.25rem 0 0 0;
 	font-size: 92%;
 	font-weight: 400;
 }
@@ -268,8 +277,8 @@ h1 {
 }
 
 .content {
-	margin: 1rem auto;
-	width: 90%;
+	margin: 0.5rem auto;
+	width: 95%;
 }
 
 tr td:nth-child(1) {
