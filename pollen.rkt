@@ -46,8 +46,8 @@
 (define (sub . elements)
   `(h4 [[class "subhead"]] ,@elements))
 
-(define (title #:street [street ""] 
-			   #:city [city ""] 
+(define (title #:street [street ""]
+			   #:city [city ""]
 	  		   #:phone [phone ""]
 			   #:email [email ""]
 			   #:website [website ""]
@@ -80,13 +80,16 @@
 	`(div [[class "statement"]]
 		  ,@elements))
 
+(define (break)
+  `(div ((class "break"))))
+
 (define (section title . elements)
-	`(div [[class "section"]] 
+	`(div [[class "section"]]
 		(div [[class "sec-title"]] (span ,title))
 		(div [[class "paragraphs"]] ,@elements)))
 
 (define (or-exists? . vars)
-	(ormap 
+	(ormap
 		(λ (var)
 			(if (equal? var "")
 				#f
@@ -98,20 +101,20 @@
   `(span [[class "role"]] ,r)))
 
 (define (themes tops)
-  (let ([top-list (map (curry string-trim #:left? #t) 
+  (let ([top-list (map (curry string-trim #:left? #t)
   					   (string-split tops ","))])
 	`(div [[class "topics"]]
 		  ,@(map (curry splice-tag? 'span "topic") top-list))))
 
 (define (par #:org [org ""]
 			 #:area [area ""]
-			 #:roles [roles ""] 
+			 #:roles [roles ""]
 			 #:date [date ""]
 			 #:loc [loc ""]
 			 #:topics [topics ""] #:show-tops? [show-tops #t]
 			 . elements)
 	`(div [[class "paragraph"]]
-		,(if-var org 
+		,(if-var org
 				 `(div [[class "par-head"]]
 					   (div [[class "organization"]]
 							,(splice? 'span org)
@@ -123,8 +126,8 @@
 				 `(div [[class "roles"]]
 					   ,(if-var roles (to-roles roles))
 					   #;,(if-var topics (themes topics))))
-		(div [[class "content"]] 
-			 ,@elements 
+		(div [[class "content"]]
+			 ,@elements
 			 ,(if show-tops
 			 	  (if-var topics (themes topics))
 				  ""))))

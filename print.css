@@ -3,7 +3,11 @@
         font-size: 12px;
     }
 
+    .break {
+        break-after: page;
+    }
+
     .paragraph {
-        page-break-after: avoid;
+        break-after: avoid;
     }
 }
