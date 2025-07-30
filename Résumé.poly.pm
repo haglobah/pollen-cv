@@ -30,7 +30,7 @@
 
 ◊section["Work Experience"]{
 
-  ◊par[#:org "active group GmbH" #:area "Software Architecture" #:roles '("Software Architect") #:date "05/2024-Present" #:loc "Tübingen/Remote" #:topics "Software Architecture, Clojure, ClojureScript, Docker, Nix, UnoCSS, Emacs, nvim"]{
+  ◊par[#:org "Active Group GmbH" #:area "Software Architecture" #:roles '("Software Architect") #:date "05/2024-Present" #:loc "Tübingen/Remote" #:topics "Software Architecture, Clojure, ClojureScript, Docker, Nix, UnoCSS, Emacs, Neovim"]{
 
   }
   ◊par[#:org "zelium.io" #:area "Startup" #:roles '("Startup Founder") #:date "09/2023-05/2024" #:loc "Tübingen" #:topics "Systems Practice, Design Thinking, Elixir, Phoenix LiveView, Tailwind CSS, CodeMirror, Nix"]{
@@ -52,13 +52,13 @@
     }
 
   }
-  ◊par[#:org "active group GmbH" #:area "Software Development" #:roles '("Intern") #:date "03/2020-05/2020" #:loc "Tübingen" #:topics "Haskell, Clojure, Machine Learning, Emacs, magit, pair programming"]{
+  ◊par[#:org "Active Group GmbH" #:area "Software Development" #:roles '("Intern") #:date "03/2020-05/2020" #:loc "Tübingen" #:topics "Haskell, Clojure, Machine Learning, Emacs, Magit, Pair Programming"]{
 
     ◊; Implemented a Web Server for a Machine Learning Project in Haskell.
     ◊; Developed parts of the project's frontend in ClojureScript.
 
   }
-  ◊par[#:org "TNG Technology Consulting" #:area "Technology Consulting" #:roles '("Intern") #:date "12/2019-03/2020" #:loc "Munich" #:topics "C#, Python, Unity, Reinforcement Learning, Tensorflow, git"]{
+  ◊par[#:org "TNG Technology Consulting" #:area "Technology Consulting" #:roles '("Intern") #:date "12/2019-03/2020" #:loc "Munich" #:topics "C#, Python, Unity, Reinforcement Learning, Tensorflow, Git"]{
 
     ◊; Developed AI Agents for the Game Blobby VR.
     ◊; Looked after ◊;{managed?} the TNG booth at OOP 2020.
@@ -75,7 +75,7 @@
 
   ◊par[#:org "Deutsche SchülerAkademie" #:area "" #:roles '("Course Instructor") #:date "16 days | 06-07/2022" #:loc "Wolfsberg" #:topics "Learning, Teaching" #:show-tops? #t]{
 
-    Taught a 50-hour university-level course called ◊e{How People learn}.
+    Taught a 50-hour university-level course called ◊e{How People Learn}.
 
     ◊; Taught a 50-hour university level course called ◊e{How People Learn} to exceptionally strong students (age 16-18). Co-supervised all the students over the course of the academy.
   }
