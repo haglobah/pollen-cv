@@ -11,12 +11,12 @@
 
   ◊par[#:roles '("Programming Languages")]{
 
-    ◊themes{Clojure, Elixir, Racket, Haskell, C, Nix, Rust}
+    ◊themes{TypeScript, Clojure, Elixir, Racket, Haskell, C, Nix, SQL}
   }
 
   ◊par[#:roles '("Programming")]{
 
-    ◊themes{Git, Docker, NixOS, Software Architecture, Functional Programming, Local-first Software, Phoenix LiveView, Tailwind CSS, UnoCSS, PostgreSQL}
+    ◊themes{Git, Docker, NixOS, Software Architecture, Functional Programming, Local-first Software, SolidJS, Tailwind CSS, UnoCSS, PostgreSQL}
   }
   ◊par[#:roles '("Organizational Development")]{
 
@@ -24,13 +24,16 @@
   }
   ◊par[#:roles '("Design")]{
 
-    ◊themes{Design Thinking, Systems Design, Designing your Life, Customer Development}
+    ◊themes{Design Thinking, Systems Thinking, Designing your Life, Customer Development}
   }
 }
 
 ◊section["Work Experience"]{
 
-  ◊par[#:org "Active Group GmbH" #:area "Software Architecture" #:roles '("Software Architect") #:date "05/2024-Present" #:loc "Tübingen/Remote" #:topics "Software Architecture, Clojure, ClojureScript, Docker, Nix, UnoCSS, Emacs, Neovim"]{
+  ◊par[#:org "humane.tools" #:area "Startup" #:roles '("Founder") #:date "01/2026-Present" #:loc "Tübingen" #:topics "Software Architecture, TypeScript, Nix, SolidJS, TailwindCSS, Local-first Software, Design"]{
+
+  }
+  ◊par[#:org "Active Group GmbH" #:area "Software Architecture" #:roles '("Software Architect") #:date "05/2024-Present" #:loc "Tübingen/Remote" #:topics "Software Architecture, TypeScript, Clojure, ClojureScript, Docker, Nix, SolidJS, UnoCSS, TailwindCSS, Emacs, Neovim"]{
 
   }
   ◊par[#:org "zelium.io" #:area "Startup" #:roles '("Startup Founder") #:date "09/2023-05/2024" #:loc "Tübingen" #:topics "Systems Practice, Design Thinking, Elixir, Phoenix LiveView, Tailwind CSS, CodeMirror, Nix"]{
@@ -66,16 +69,24 @@
 
   ◊section{ }
 
-  ◊par[#:org "Deutsche SchülerAkademie" #:area "" #:roles '("Course Instructor") #:date "16 days | 07/2025" #:loc "Roßleben" #:topics "Science, Teaching" #:show-tops? #t]{
+  ◊par[#:org "AI Safety Tübingen" #:area "AI Safety Fellowship" #:roles '("Project Lead") #:date "02/2026-Present" #:loc "Tübingen" #:topics "Operations" #:show-tops? #t]{
+
+  }
+
+  ◊par[#:org "Tü.λ" #:area "Functional Programming Meetup" #:roles '("Meetup Host") #:date "06/2024-Present" #:loc "Tübingen" #:topics "" #:show-tops? #t]{
+
+  }
+
+  ◊par[#:org "Deutsche SchülerAkademie" #:area "" #:roles '("Course Instructor") #:date "17 days | 07/2025" #:loc "Roßleben" #:topics "Science, Teaching" #:show-tops? #t]{
 
     Designed and taught a 50-hour university-level course about empirical methods and science.
 
     ◊; Taught a 50-hour university level course called ◊e{How People Learn} to exceptionally strong students (age 16-18). Co-supervised all the students over the course of the academy.
   }
 
-  ◊par[#:org "Deutsche SchülerAkademie" #:area "" #:roles '("Course Instructor") #:date "16 days | 06-07/2022" #:loc "Wolfsberg" #:topics "Learning, Teaching" #:show-tops? #t]{
+  ◊par[#:org "Deutsche SchülerAkademie" #:area "" #:roles '("Course Instructor") #:date "17 days | 06-07/2022" #:loc "Wolfsberg" #:topics "Learning, Teaching" #:show-tops? #t]{
 
-    Taught a 50-hour university-level course called ◊e{How People Learn}.
+    Designed and taught a 50-hour university-level course called ◊e{How People Learn}.
 
     ◊; Taught a 50-hour university level course called ◊e{How People Learn} to exceptionally strong students (age 16-18). Co-supervised all the students over the course of the academy.
   }
