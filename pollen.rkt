@@ -108,6 +108,7 @@
       ,@(map (curry splice-tag? 'span "topic") top-list))))
 
 (define (par #:org [org ""]
+       #:url [url ""]
        #:area [area ""]
        #:roles [roles ""]
        #:date [date ""]
@@ -118,7 +119,9 @@
     ,(if-var org
          `(div [[class "par-head"]]
              (div [[class "organization"]]
-              ,(splice? 'span org)
+              ,(if (equal? url "")
+                   (splice? 'span org)
+                   `(a [[href ,url]] ,(splice? 'span org)))
               ,(splice? 'span area))
              (div [[class "spacetime"]]
               ,(splice? 'span date)
