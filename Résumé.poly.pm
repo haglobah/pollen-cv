@@ -1,31 +1,36 @@
 #lang pollen
 
-◊title[#:street "Primus-Truber-Straße 1," #:city "72072 Tübingen" #:phone "+49 1573 6830713" #:email "bah@posteo.de" #:website "https://me.beathagenlocher.com" #:github "https://github.com/haglobah" #:linkedin "https://linkedin.com/in/beat-hagenlocher/"]{Beat Hagenlocher}
+◊title[#:street "Dorfstraße 62," #:city "72074 Tübingen, Germany" #:phone "+49 1573 6830713" #:email "bah@posteo.de" #:website "https://me.beathagenlocher.com" #:github "https://github.com/haglobah" #:linkedin "https://linkedin.com/in/beat-hagenlocher/"]{Beat Hagenlocher}
 
-◊; ◊statement{
-
-
-◊; }
+◊statement{
+  An EA and Rationalist concerned about the World's most pressing problems pivoting: ◊br{}◊br{} From only building career capital to also having impact in my main job.
+}
 
 ◊section["Skills & Abilities"]{
 
-  ◊par[#:roles '("Programming Languages")]{
+  ◊par[#:roles '("Technical")]{
+    
 
-    ◊themes{TypeScript, Clojure, Elixir, Racket, Haskell, C, Nix, SQL}
+    ◊themes{Frontend: TypeScript | SolidJS | TailwindCSS | ClojureScript | PureScript, Backend: Clojure | Elixir | Haskell | C | SQL, Nix, Software Architecture, Functional Programming, Local-first Software}
   }
 
-  ◊par[#:roles '("Programming")]{
+  ◊par[#:roles '("Design Thinking/User Interaction")]{
+    Have conducted various Customer Development Interviews (for rootlinks, for zelium, for humane.tools, at Hackathons)
 
-    ◊themes{Git, Docker, NixOS, Software Architecture, Functional Programming, Local-first Software, SolidJS, Tailwind CSS, UnoCSS, PostgreSQL}
+    ◊themes{Customer Development, Design Thinking, Systems Practice, The Mom Test}
   }
-  ◊par[#:roles '("Organizational Development")]{
 
-    ◊themes{Sociocracy, The Lean Startup, Start with Why, Reinventing Organizations}
-  }
-  ◊par[#:roles '("Design")]{
+  ◊par[#:roles '("Growth")]{
+    Analytics (tracking funnels) for my digital garden and at Active Group GmbH
 
-    ◊themes{Design Thinking, Systems Thinking, Designing your Life, Customer Development}
+    ◊themes{PostHog, Plausible}
   }
+
+  ◊par[#:roles '("Writing & Teaching")]{
+    Both in my ◊link["https://beathagenlocher.com"]{digital garden}, for ◊link["https://funktionale-programmierung.de/en/2026/03/04/fp-by-example-refactoring-typescript-explicit-model.html"]{work}, for ◊link["https://www.schuelerakademien.de/programm/kurs?tx_ewacademy_coursedetail%5Bcontroller%5D=Course&tx_ewacademy_coursedetail%5Bcourse%5D=4817&cHash=04644e2bcdc91409f905091d0161cd9e"]{courses} and in my personal knowledge system.
+    ◊themes{Style: Towards Clarity and Grace, Practical Typography}
+  }
+
 }
 
 ◊section["Work Experience"]{
@@ -34,24 +39,21 @@
 
   }
   ◊par[#:org "Active Group GmbH" #:area "Software Architecture" #:roles '("Software Architect") #:date "05/2024-Present" #:loc "Tübingen/Remote" #:topics "Software Architecture, TypeScript, Clojure, ClojureScript, Docker, Nix, SolidJS, UnoCSS, TailwindCSS, Emacs, Neovim"]{
-
+    
   }
   ◊par[#:org "zelium.io" #:area "Startup" #:roles '("Startup Founder") #:date "09/2023-05/2024" #:loc "Tübingen" #:topics "Systems Practice, Design Thinking, Elixir, Phoenix LiveView, Tailwind CSS, CodeMirror, Nix"]{
 
     ◊ul{
       ◊li{Applied ◊l["https://oecd-opsi.org/toolkits/systems-practice-workbook/"]{Systems Practice} to the problem of digital collaboration}
-      ◊li{Built prototypes}
-      ◊li{Conducted Customer Development Interviews}
-      ◊li{Set up a tech stack ensuring velocity}
+      ◊li{Identified a gap: A collaboration tool that starts with one editor field, but lets you scale up to scheduling, protocols you can share easily, but which you }
+      ◊li{Conducted Customer Development Interviews and built low-fidelity propotypes for them}
       ◊li{Built an MVP}
     }
   }
   ◊par[#:org "Hacker School gGmbH" #:area "NGO: Education" #:roles '("Working Student") #:date "02/2021-03/2023" #:loc "Hamburg/Remote" #:topics "Sociocracy, Racket, Teaching"]{
 
     ◊ul{
-      ◊li{Developed & held courses}
-      ◊li{Created a course website with ◊l["https://pollenpub.com"]{Pollen}}
-      ◊li{Introduced a knowledge base system}
+      ◊li{Created and a course website with ◊l["https://pollenpub.com"]{Pollen}, created courses}
     }
 
   }
@@ -70,7 +72,7 @@
   ◊section{ }
 
   ◊par[#:org "AI Safety Tübingen" #:area "AI Safety Fellowship" #:roles '("Project Lead") #:date "02/2026-Present" #:loc "Tübingen" #:topics "Operations" #:show-tops? #t]{
-
+    Talking to lots of people, gathering support from the university/the institutes, writing the grant application for CG.
   }
 
   ◊par[#:org "Tü.λ" #:area "Functional Programming Meetup" #:roles '("Meetup Host") #:date "06/2024-Present" #:loc "Tübingen" #:topics "" #:show-tops? #t]{
@@ -138,7 +140,7 @@
   }
   ◊par[#:org "ETH Zürich" #:area "" #:roles '("BSc Physics") #:date "09/2020-02/2022" #:loc "Zürich" #:topics ""]{
 
-    Up until the 3rd semester.
+    3 semesters Physics before pivoting towards my Plan B/Z, Software Engineering.
     ◊(br)◊(br)
     ◊e{03/21 - 07/21 Participation in the ◊l["https://www.rootlinks.ch"]{rootlinks}} programme
   }
