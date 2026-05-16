@@ -11,9 +11,8 @@
 ◊section["Skills & Abilities"]{
 
   ◊par[#:roles '("Software Engineering")]{
-    
 
-    ◊themes{Frontend: TypeScript | SolidJS | TailwindCSS | ClojureScript | PureScript, Backend: Clojure | Elixir | Haskell | C | SQL, Nix, Software Architecture, Functional Programming, Local-first Software}
+    ◊themes{Frontend: TypeScript | SolidJS | TailwindCSS, Backend: Clojure | Elixir | Haskell | SQL, Nix, Software Architecture, Functional Programming, Local-first Software}
   }
 
   ◊par[#:roles '("Design Thinking/User Experience")]{
@@ -23,7 +22,7 @@
   }
 
   ◊par[#:roles '("Growth")]{
-    Analytics (tracking funnels) for my ◊link["https://beathagenlocher.com"]{digital garden} and at ◊link["https://active-group.de"]{Active Group GmbH}
+    Analytics (event tracking, funnels, user paths) for my ◊link["https://beathagenlocher.com"]{digital garden} and at ◊link["https://active-group.de"]{Active Group GmbH}
 
     ◊themes{PostHog, Plausible}
   }
@@ -38,11 +37,11 @@
 ◊section["Work Experience"]{
 
   ◊par[#:org "AI Safety Tübingen" #:url "https://aisafetytuebingen.com" #:area "AI Safety Fellowship" #:roles '("Project Lead") #:date "02/2026-Present" #:loc "Tübingen" #:topics "Operations" #:show-tops? #t]{
-    Talking to lots of people, gathering support from the University of Tübingen/ELLIS Institute/Max Planck Institute, writing the grant application for Coefficient Giving.
+    Doing what's needed to make it happen: Gathering support from the ELLIS Institute/the Max Planck Institute, writing the grant application for CG.
   }
 
   ◊par[#:org "humane.tools" #:url "https://humane.tools" #:area "Startup" #:roles '("Founder") #:date "01/2026-Present" #:loc "Tübingen" #:topics "Software Architecture, TypeScript, Nix, SolidJS, TailwindCSS, Local-first Software, Design"]{
-  Building the tools I've always wanted: A better todo app, a better Spaced Repetition System. Built the todo app from 0 to 1 using Customer Development Interviews.
+  Building the tools I've always wanted: A ◊link["https://todos.humane.tools"]{better todo app}, a better Spaced Repetition System. Built the todo app from scratch, conducted Customer Development Interviews.
 
   }
   ◊par[#:org "Active Group GmbH" #:url "https://www.active-group.de" #:area "Software Architecture" #:roles '("Software Architect") #:date "05/2024-Present" #:loc "Tübingen/Remote" #:topics "Software Architecture, TypeScript, Clojure, ClojureScript, Docker, Nix, SolidJS, UnoCSS, TailwindCSS, Emacs, Neovim"]{
@@ -63,15 +62,11 @@
   }
   ◊par[#:org "rootlinks" #:url "https://www.rootlinks.ch" #:area "NGO: Education, Sustainability" #:roles '("Organizer") #:date "06/2021-03/2022" #:loc "Zürich" #:topics "Sociocracy, Sustainability, Design Thinking, Systems Design, Teaching, Coaching, Recruiting"]{
 
-    Organized the rootlinks programme for two semesters.
-
-    ◊; General Circle, Learning Journey Circle, Recruiting Circle
-    ◊;{◊ul{
+    ◊ul{
       ◊li{Organized the Learning Journey of two semesters, held inputs and workshops}
-      ◊li{Coached a challenge team}
-      ◊li{Contributed to creating – and evolving – a working organizational structure, as well as a knowledge base}
+      ◊li{Mentored a challenge team}
+      ◊li{Contributed to creating—and evolving—a working organizational structure}
       ◊li{Planned and executed the Recruiting of the 3rd batch.}
-    }
     }
   }
   ◊; ◊par[#:org "Active Group GmbH" #:url "https://www.active-group.de" #:area "Software Development" #:roles '("Intern") #:date "03/2020-05/2020" #:loc "Tübingen" #:topics "Haskell, Clojure, Machine Learning, Emacs, Magit, Pair Programming"]{
@@ -130,7 +125,7 @@
 
 ◊break{}
 
-◊; ◊div[#:style "height: 100px"]{}
+◊div[#:style "height: 100px"]{}
 
 ◊section["Education"]{
 
