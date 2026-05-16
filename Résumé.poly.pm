@@ -3,31 +3,33 @@
 ◊title[#:street "Dorfstraße 62," #:city "72074 Tübingen, Germany" #:phone "+49 1573 6830713" #:email "bah@posteo.de" #:website "https://me.beathagenlocher.com" #:github "https://github.com/haglobah" #:linkedin "https://linkedin.com/in/beat-hagenlocher/"]{Beat Hagenlocher}
 
 ◊statement{
-  An EA and Rationalist concerned about the World's most pressing problems pivoting: ◊br{}◊br{} From only building career capital to also having impact in my main job.
+  An EA and Rationalist concerned about the world's most pressing problems.
+  ◊br{} ◊br{}
+  Pivoting my main job from building career capital to having impact.
 }
 
 ◊section["Skills & Abilities"]{
 
-  ◊par[#:roles '("Technical")]{
+  ◊par[#:roles '("Software Engineering")]{
     
 
     ◊themes{Frontend: TypeScript | SolidJS | TailwindCSS | ClojureScript | PureScript, Backend: Clojure | Elixir | Haskell | C | SQL, Nix, Software Architecture, Functional Programming, Local-first Software}
   }
 
-  ◊par[#:roles '("Design Thinking/User Interaction")]{
+  ◊par[#:roles '("Design Thinking/User Experience")]{
     Have conducted various Customer Development Interviews (for rootlinks, for zelium, for humane.tools, at Hackathons)
 
-    ◊themes{Customer Development, Design Thinking, Systems Practice, The Mom Test}
+    ◊themes{Customer Development, Design Thinking, Systems Practice, The Mom Test, The Heart of Innovation}
   }
 
   ◊par[#:roles '("Growth")]{
-    Analytics (tracking funnels) for my digital garden and at Active Group GmbH
+    Analytics (tracking funnels) for my ◊link["https://beathagenlocher.com"]{digital garden} and at ◊link["https://active-group.de"]{Active Group GmbH}
 
     ◊themes{PostHog, Plausible}
   }
 
   ◊par[#:roles '("Writing & Teaching")]{
-    Both in my ◊link["https://beathagenlocher.com"]{digital garden}, for ◊link["https://funktionale-programmierung.de/en/2026/03/04/fp-by-example-refactoring-typescript-explicit-model.html"]{work}, for ◊link["https://www.schuelerakademien.de/programm/kurs?tx_ewacademy_coursedetail%5Bcontroller%5D=Course&tx_ewacademy_coursedetail%5Bcourse%5D=4817&cHash=04644e2bcdc91409f905091d0161cd9e"]{courses} and in my personal knowledge system.
+    Both in my ◊link["https://beathagenlocher.com"]{digital garden}, for ◊link["https://funktionale-programmierung.de/en/2026/03/04/fp-by-example-refactoring-typescript-explicit-model.html"]{work}, for ◊link["https://www.schuelerakademien.de/programm/kurs?tx_ewacademy_coursedetail%5Bcontroller%5D=Course&tx_ewacademy_coursedetail%5Bcourse%5D=4817&cHash=04644e2bcdc91409f905091d0161cd9e"]{courses} and inside my personal knowledge base.
     ◊themes{Style: Towards Clarity and Grace, Practical Typography}
   }
 
@@ -35,64 +37,31 @@
 
 ◊section["Work Experience"]{
 
-  ◊par[#:org "humane.tools" #:area "Startup" #:roles '("Founder") #:date "01/2026-Present" #:loc "Tübingen" #:topics "Software Architecture, TypeScript, Nix, SolidJS, TailwindCSS, Local-first Software, Design"]{
+  ◊par[#:org "AI Safety Tübingen" #:url "https://aisafetytuebingen.com" #:area "AI Safety Fellowship" #:roles '("Project Lead") #:date "02/2026-Present" #:loc "Tübingen" #:topics "Operations" #:show-tops? #t]{
+    Talking to lots of people, gathering support from the University of Tübingen/ELLIS Institute/Max Planck Institute, writing the grant application for Coefficient Giving.
+  }
+
+  ◊par[#:org "humane.tools" #:url "https://humane.tools" #:area "Startup" #:roles '("Founder") #:date "01/2026-Present" #:loc "Tübingen" #:topics "Software Architecture, TypeScript, Nix, SolidJS, TailwindCSS, Local-first Software, Design"]{
+  Building the tools I've always wanted: A better todo app, a better Spaced Repetition System. Built the todo app from 0 to 1 using Customer Development Interviews.
 
   }
-  ◊par[#:org "Active Group GmbH" #:area "Software Architecture" #:roles '("Software Architect") #:date "05/2024-Present" #:loc "Tübingen/Remote" #:topics "Software Architecture, TypeScript, Clojure, ClojureScript, Docker, Nix, SolidJS, UnoCSS, TailwindCSS, Emacs, Neovim"]{
-    
+  ◊par[#:org "Active Group GmbH" #:url "https://www.active-group.de" #:area "Software Architecture" #:roles '("Software Architect") #:date "05/2024-Present" #:loc "Tübingen/Remote" #:topics "Software Architecture, TypeScript, Clojure, ClojureScript, Docker, Nix, SolidJS, UnoCSS, TailwindCSS, Emacs, Neovim"]{
+    Writing Software for German industrial clients: Worked on a monitoring platform for a factory in Clojure, and a user-facing map application with a SolidJS/TypeScript on the frontend, and Clojure on the backend.
   }
-  ◊par[#:org "zelium.io" #:area "Startup" #:roles '("Startup Founder") #:date "09/2023-05/2024" #:loc "Tübingen" #:topics "Systems Practice, Design Thinking, Elixir, Phoenix LiveView, Tailwind CSS, CodeMirror, Nix"]{
+  ◊par[#:org "zelium.io" #:url "https://zelium.io" #:area "Startup" #:roles '("Startup Founder") #:date "09/2023-05/2024" #:loc "Tübingen" #:topics "Systems Practice, Design Thinking, Elixir, Phoenix LiveView, Tailwind CSS, CodeMirror, Nix"]{
 
     ◊ul{
       ◊li{Applied ◊l["https://oecd-opsi.org/toolkits/systems-practice-workbook/"]{Systems Practice} to the problem of digital collaboration}
-      ◊li{Identified a gap: A collaboration tool that starts with one editor field, but lets you scale up to scheduling, protocols you can share easily, but which you }
-      ◊li{Conducted Customer Development Interviews and built low-fidelity propotypes for them}
+      ◊li{Identified a gap: A collaboration tool that starts very simple, makes sharing easy, but lets you scale up to scheduling, meeting protocols and more }
+      ◊li{Conducted Customer Development Interviews and built low-fidelity propotypes}
       ◊li{Built an MVP}
     }
   }
-  ◊par[#:org "Hacker School gGmbH" #:area "NGO: Education" #:roles '("Working Student") #:date "02/2021-03/2023" #:loc "Hamburg/Remote" #:topics "Sociocracy, Racket, Teaching"]{
-
-    ◊ul{
-      ◊li{Created and a course website with ◊l["https://pollenpub.com"]{Pollen}, created courses}
-    }
+  ◊par[#:org "Hacker School gGmbH" #:url "https://hacker-school.de" #:area "NGO: Education" #:roles '("Working Student") #:date "02/2021-03/2023" #:loc "Hamburg/Remote" #:topics "Sociocracy, Racket, Teaching"]{
+    Created and a course website with ◊l["https://pollenpub.com"]{Pollen}, created courses, both used by thousands of students.
 
   }
-  ◊par[#:org "Active Group GmbH" #:area "Software Development" #:roles '("Intern") #:date "03/2020-05/2020" #:loc "Tübingen" #:topics "Haskell, Clojure, Machine Learning, Emacs, Magit, Pair Programming"]{
-
-    ◊; Implemented a Web Server for a Machine Learning Project in Haskell.
-    ◊; Developed parts of the project's frontend in ClojureScript.
-
-  }
-  ◊par[#:org "TNG Technology Consulting" #:area "Technology Consulting" #:roles '("Intern") #:date "12/2019-03/2020" #:loc "Munich" #:topics "C#, Python, Unity, Reinforcement Learning, Tensorflow, Git"]{
-
-    ◊; Developed AI Agents for the Game Blobby VR.
-    ◊; Looked after ◊;{managed?} the TNG booth at OOP 2020.
-  }
-
-  ◊section{ }
-
-  ◊par[#:org "AI Safety Tübingen" #:area "AI Safety Fellowship" #:roles '("Project Lead") #:date "02/2026-Present" #:loc "Tübingen" #:topics "Operations" #:show-tops? #t]{
-    Talking to lots of people, gathering support from the university/the institutes, writing the grant application for CG.
-  }
-
-  ◊par[#:org "Tü.λ" #:area "Functional Programming Meetup" #:roles '("Meetup Host") #:date "06/2024-Present" #:loc "Tübingen" #:topics "" #:show-tops? #t]{
-
-  }
-
-  ◊par[#:org "Deutsche SchülerAkademie" #:area "" #:roles '("Course Instructor") #:date "17 days | 07/2025" #:loc "Roßleben" #:topics "Science, Teaching" #:show-tops? #t]{
-
-    Designed and taught a 50-hour university-level course about empirical methods and science.
-
-    ◊; Taught a 50-hour university level course called ◊e{How People Learn} to exceptionally strong students (age 16-18). Co-supervised all the students over the course of the academy.
-  }
-
-  ◊par[#:org "Deutsche SchülerAkademie" #:area "" #:roles '("Course Instructor") #:date "17 days | 06-07/2022" #:loc "Wolfsberg" #:topics "Learning, Teaching" #:show-tops? #t]{
-
-    Designed and taught a 50-hour university-level course called ◊e{How People Learn}.
-
-    ◊; Taught a 50-hour university level course called ◊e{How People Learn} to exceptionally strong students (age 16-18). Co-supervised all the students over the course of the academy.
-  }
-  ◊par[#:org "rootlinks" #:area "NGO: Education, Sustainability" #:roles '("voluntary") #:date "06/2021-03/2022" #:loc "Zürich" #:topics "Sociocracy, Sustainability, Design Thinking, Systems Design, Teaching, Coaching, Recruiting"]{
+  ◊par[#:org "rootlinks" #:url "https://www.rootlinks.ch" #:area "NGO: Education, Sustainability" #:roles '("Organizer") #:date "06/2021-03/2022" #:loc "Zürich" #:topics "Sociocracy, Sustainability, Design Thinking, Systems Design, Teaching, Coaching, Recruiting"]{
 
     Organized the rootlinks programme for two semesters.
 
@@ -105,6 +74,37 @@
     }
     }
   }
+  ◊; ◊par[#:org "Active Group GmbH" #:url "https://www.active-group.de" #:area "Software Development" #:roles '("Intern") #:date "03/2020-05/2020" #:loc "Tübingen" #:topics "Haskell, Clojure, Machine Learning, Emacs, Magit, Pair Programming"]{
+
+  ◊;   ◊; Implemented a Web Server for a Machine Learning Project in Haskell.
+  ◊;   ◊; Developed parts of the project's frontend in ClojureScript.
+
+  ◊; }
+  ◊; ◊par[#:org "TNG Technology Consulting" #:url "https://www.tngtech.com" #:area "Technology Consulting" #:roles '("Intern") #:date "12/2019-03/2020" #:loc "Munich" #:topics "C#, Python, Unity, Reinforcement Learning, Tensorflow, Git"]{
+
+  ◊;   ◊; Developed AI Agents for the Game Blobby VR.
+  ◊;   ◊; Looked after ◊;{managed?} the TNG booth at OOP 2020.
+  ◊; }
+
+  ◊; ◊section{ }
+
+  ◊; ◊par[#:org "Tü.λ" #:url "https://tu-lambda.github.io/" #:area "Functional Programming Meetup" #:roles '("Meetup Host") #:date "06/2024-Present" #:loc "Tübingen" #:topics "" #:show-tops? #t]{
+
+  ◊; }
+
+  ◊; ◊par[#:org "Deutsche SchülerAkademie" #:url "https://www.deutsche-schuelerakademien.de" #:area "" #:roles '("Course Instructor") #:date "17 days | 07/2025" #:loc "Roßleben" #:topics "Science, Teaching" #:show-tops? #t]{
+
+  ◊;   Designed and taught a 50-hour university-level course about empirical methods and science.
+
+  ◊;   ◊; Taught a 50-hour university level course called ◊e{How People Learn} to exceptionally strong students (age 16-18). Co-supervised all the students over the course of the academy.
+  ◊; }
+
+  ◊; ◊par[#:org "Deutsche SchülerAkademie" #:url "https://www.deutsche-schuelerakademien.de" #:area "" #:roles '("Course Instructor") #:date "17 days | 06-07/2022" #:loc "Wolfsberg" #:topics "Learning, Teaching" #:show-tops? #t]{
+
+  ◊;   Designed and taught a 50-hour university-level course called ◊e{How People Learn}.
+
+  ◊;   ◊; Taught a 50-hour university level course called ◊e{How People Learn} to exceptionally strong students (age 16-18). Co-supervised all the students over the course of the academy.
+  ◊; }
   ◊; ◊par[#:org "Spatzennest Tübingen" #:area "" #:roles '("Team Leader – three times" "Group Leader – eight times") #:date "2017-today" #:loc "Tübingen" #:topics ""]{
 
   ◊;   ◊; Led a team (of group leaders and children) over the course of the 3-week kid's camp.
@@ -130,15 +130,15 @@
 
 ◊break{}
 
-◊div[#:style "height: 100px"]{}
+◊; ◊div[#:style "height: 100px"]{}
 
 ◊section["Education"]{
 
-  ◊par[#:org "42 Heilbronn" #:area "Programming School" #:roles '("Student") #:date "03/2022-09/2023" #:loc "" #:topics "C, C++, Elixir, Racket"]{
+  ◊par[#:org "42 Heilbronn" #:url "https://42heilbronn.de" #:area "Programming School" #:roles '("Student") #:date "03/2022-09/2023" #:loc "" #:topics "C, C++, Elixir, Racket"]{
 
     ◊e{Creation and Maintenance of the ◊l["https://haglobah.github.io/Mastering-42/"]{Mastering 42-Website}}
   }
-  ◊par[#:org "ETH Zürich" #:area "" #:roles '("BSc Physics") #:date "09/2020-02/2022" #:loc "Zürich" #:topics ""]{
+  ◊par[#:org "ETH Zürich" #:url "https://ethz.ch" #:area "" #:roles '("BSc Physics") #:date "09/2020-02/2022" #:loc "Zürich" #:topics ""]{
 
     3 semesters Physics before pivoting towards my Plan B/Z, Software Engineering.
     ◊(br)◊(br)
