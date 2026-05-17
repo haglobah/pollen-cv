@@ -26,7 +26,7 @@
   `(root ,@elements))
 
 (define (link url . elements)
-  `(a [[href ,url]] ,@elements))
+  `(a [[href ,url] [_noopener ""] [_noreferrer ""] (target "blank")] ,@elements))
 (define l link)
 
 (define (b . elements)
