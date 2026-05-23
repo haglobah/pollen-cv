@@ -49,7 +49,7 @@
     margin: (x: 1.6cm, top: 1.2cm, bottom: 1.6cm),
   )
   set text(
-    font: ("Charter", "Source Serif Pro", "Source Serif 4", "Source Serif", "Noto Serif"),
+    font: ("Charter", "Source Serif Pro"),
     size: 10pt,
     lang: "en",
     hyphenate: true,
@@ -59,7 +59,7 @@
   body
 }
 
-#let _sans = ("Source Sans Pro", "Source Sans 3", "Source Sans", "Noto Sans")
+#let _sans = "Source Sans Pro"
 
 #let title(
   name,
