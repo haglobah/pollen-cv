@@ -3,7 +3,7 @@
 ◊title[#:street "Dorfstraße 62," #:city "72074 Tübingen, Germany" #:phone "+49 1573 6830713" #:email "bah@posteo.de" #:website "https://me.beathagenlocher.com" #:github "https://github.com/haglobah" #:linkedin "https://linkedin.com/in/beat-hagenlocher/"]{Beat Hagenlocher}
 
 ◊statement{
-  An EA and Rationalist looking to apply career capital in Software Engineering, Teaching, (Web) Design and Ops to have an impact on the world's most pressing problems. Like: founding an AI Safety Fellowship, or pulling more people into better careers by serving them better on 80000hours.org.
+  An EA and Rationalist looking to apply career capital in Software Engineering, Teaching, (Web) Design and Ops to have an impact on the world's most pressing problems. ◊br{} Like: founding an AI Safety Fellowship, pulling more people into better careers by doing other kinds of fieldbuilding, or working on/for a startup in AI Safety.
 }
 
 ◊section["Skills & Abilities"]{
