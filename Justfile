@@ -3,3 +3,6 @@ setup:
 
 dev:
     raco pollen start
+
+watch:
+    typst watch Résumé.typ
