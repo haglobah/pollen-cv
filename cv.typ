@@ -54,7 +54,7 @@
     lang: "en",
     hyphenate: true,
   )
-  set par(justify: false, leading: 0.55em)
+  set par(justify: false, leading: 0.8em)
   show link: underline.with(stroke: 0.4pt + rgb("#000000a0"), offset: 2pt)
   body
 }
@@ -194,7 +194,7 @@
     block(spacing: 0.2em, _role(roles))
   }
   // Body content
-  block(inset: (left: 1em), above: 1em, below: 0em, width: 95%, body)
+  block(inset: (left: 1em), above: 1.2em, below: 0em, width: 95%, body)
   // Topics
   if show-tops and topics != "" {
     block(inset: (left: 1em), above: 1em, themes(topics))
