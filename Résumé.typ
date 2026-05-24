@@ -13,7 +13,7 @@
 )[Beat Hagenlocher]
 
 #statement[
-An EA and Rationalist looking to apply career capital in Software Engineering, Teaching, (Web) Design and Ops to have an impact on the world's most pressing problems. ◊br{} Like: founding an AI Safety Fellowship, pulling more people into better careers by doing other kinds of fieldbuilding, or working on/for a startup in AI Safety.
+An EA and Rationalist looking to apply career capital in Software Engineering, Teaching, (Web) Design and Ops to have an impact on the world's most pressing problems. \ Like: founding an AI Safety Fellowship, pulling more people into better careers by doing other kinds of fieldbuilding, or working on/for a startup in AI Safety.
 ]
 
 #section("Skills & Abilities")[

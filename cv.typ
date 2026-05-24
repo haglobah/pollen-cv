@@ -116,7 +116,7 @@
   above: 0.5em,
   below: 2.5em,
   {
-    line(length: 100%, stroke: 0.1pt + black)
+    line(length: 100%, stroke: 0.4pt + black)
     v(0.5em, weak: true)
     block(inset: (left: 0.2em), text(
       font: _sans,
