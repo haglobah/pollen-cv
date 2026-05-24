@@ -161,10 +161,6 @@
   ]
 ]
 
-#break-page()
-
-#v(100pt, weak: true)
-
 #section("Education")[
 
   #par(
