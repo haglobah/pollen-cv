@@ -74,15 +74,14 @@
   set align(center)
   set text(font: _sans, tracking: 0.17em)
   // Name
-  v(1.5em)
   text(size: 1.7em, weight: 500, upper(name))
   // Address
-  v(0.8em)
+  v(-0.6em)
   text(size: 0.95em, weight: 500, upper({
     [#street  #city]
   }))
   // Contact row
-  v(0.4em)
+  v(0em)
   block(width: 100%, {
     set text(size: 0.95em, weight: 500)
     let parts = ()
@@ -107,7 +106,6 @@
 
 #let statement(body) = block(
   width: 100%,
-  inset: (x: 1em),
   above: 2.5em,
   below: 2em,
   emph(body),
@@ -118,8 +116,8 @@
   above: 0.5em,
   below: 2.5em,
   {
-    line(length: 100%, stroke: 1.5pt + black)
-    v(0.2em, weak: true)
+    line(length: 100%, stroke: 0.1pt + black)
+    v(0.5em, weak: true)
     block(inset: (left: 0.2em), text(
       font: _sans,
       weight: 800,
@@ -127,15 +125,15 @@
       tracking: 1.7pt,
       upper(name),
     ))
-    v(0.5em, weak: true)
     body
+    v(1.5em, weak: true)
   },
 )
 
 #let themes(s) = {
   let items = s.split(",").map(t => t.trim()).filter(t => t != "")
   block(above: 1.2em, below: 0em, {
-    set text(size: 0.92em, weight: 400)
+    set text(size: 0.92em, weight: 400, font: _sans)
     items
       .map(t => box(t))
       .join(text(size: 0.85em)[ #h(0.3em) • #h(0.3em) ])
@@ -161,7 +159,7 @@
   loc: "",
   topics: "",
   show-tops: true,
-) = block(above: 0.8em, below: 0.8em, width: 100%, {
+) = block(above: 1.5em, below: 0em, width: 100%, {
   // Head row: organization (linked) on the left, date on the right.
   if org != "" or date != "" or loc != "" {
     grid(
@@ -189,17 +187,17 @@
   }
   // Roles column
   if type(roles) == array and roles.len() > 0 {
-    v(1em, weak: true)
+    v(0.8em, weak: true)
     for r in roles { block(spacing: 0.2em, _role(r)) }
   } else if type(roles) == str and roles != "" {
     v(1em, weak: true)
     block(spacing: 0.2em, _role(roles))
   }
   // Body content
-  block(above: 1.4em, below: 0.4em, width: 95%, body)
+  block(inset: (left: 1em), above: 1em, below: 0em, width: 95%, body)
   // Topics
   if show-tops and topics != "" {
-    themes(topics)
+    block(inset: (left: 1em), above: 1em, themes(topics))
   }
 })
 
